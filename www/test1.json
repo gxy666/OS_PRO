@@ -1,0 +1,11 @@
+[
+    {
+      "type_animation": 1,
+      "background_animation": 0,
+      "var_num": 3,
+      "var_array":["var1","var2","var3"],
+      "operation_num": 3,
+      "operation_array":["operation1","operation2","operation3"],
+      "instruction":"该部分内容用于解释每个动作的含义"
+    }
+]
