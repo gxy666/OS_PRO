@@ -32,7 +32,7 @@ function display_animation(button_type)
 			complete: function() {
 				$("#main").remove();
 			}
-		  });
+		});
 		  
 	}
 	else if(button_type==2)
