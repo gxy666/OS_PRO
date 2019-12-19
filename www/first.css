@@ -60,22 +60,41 @@ body{
      font-size: 150%;
      font-family: Arial, Helvetica, sans-serif;
  }
- .varer
+
+.varer
+{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    bottom: 35%;
+    left: 60%;
+}
+
+.leader
+{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    bottom: 40%;
+    left: 13%;
+}
+
+ .varer_img
  {
     position: absolute;
+    top: 55%;
     width: 150px;
     height: 200px;
-    bottom: 25%;
-    left: 60%;
  }
- .leader
+
+ .leader_img
  {
     position: absolute;
+    top: 55%;
     width: 230px;
     height: 300px;
-    bottom: 25%;
-    left: 13%;
  }
+
  .instruction
  {
     position: fixed;
@@ -88,6 +107,7 @@ body{
     border: solid 2px black;
     background-color: white;
  }
+
  .bubble::before{
     content: '';
     width: 0;
@@ -95,17 +115,20 @@ body{
     border: 20px solid;
     position: absolute;
     bottom: -40px;
-    left: 20px;
+    left: 50px;
     border-color:#000000 transparent transparent;
 }
+
 .bubble{
     width: 300px;
     height: 200px;
+    font-size: 16px;
     border: 3px  solid #000000;
-    border-radius: 7px;  /*圆角弧度为7px*/
-    position: relative;
+    border-radius: 10px;  /*圆角弧度为7px*/
+    position: absolute;
     background-color: white;
 }
+
 .bubble::after{
     content: '';
     width: 0;
@@ -113,6 +136,6 @@ body{
     border: 20px solid;
     position: absolute;
     bottom: -37px;
-    left: 20px;
+    left: 50px;
     border-color:  #ffffff transparent transparent;
 }
