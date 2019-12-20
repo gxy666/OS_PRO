@@ -31,6 +31,7 @@ function display_animation(button_type)
 			duration:3000,
 			complete: function() {
 				$("#main").remove();
+				
 			}
 		});
 		  
