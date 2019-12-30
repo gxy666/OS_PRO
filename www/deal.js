@@ -6,11 +6,14 @@ var operaton_num;
 var operation_array;
 var instruction;
 var data_whole = new Object();
-
+var current_speed = 3;
 function sleep(d){
 	for(var t = Date.now();Date.now() - t <= d;);
 }
 
+function set_speed(speed){
+	current_speed = speed;
+}
 function display_animation(button_type)
 {
 	if(button_type==1)
@@ -28,10 +31,10 @@ function display_animation(button_type)
 		anime({
 			targets: '#main',
 			translateX: 2000,
-			duration:3000,
+			duration:1000*current_speed,
 			complete: function() {
-				$("#main").remove();
-				
+				//$("#main").remove();
+				$('#main').css('display','none');
 			}
 		});
 		  

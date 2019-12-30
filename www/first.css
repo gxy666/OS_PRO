@@ -48,6 +48,38 @@ body{
      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0c9c07', endColorstr='#29bd15');
      background-color:#0c9c07;
  }
+ .speedbutton
+ {
+     margin-top: 10px;
+     font-size:24px;
+     font-family:Arial;
+     font-weight:normal;
+     -moz-border-radius:29px;
+     -webkit-border-radius:29px;
+     border-radius:29px;
+     border:1px solid #337fed;
+     padding:9px 18px;
+     text-decoration:none;
+     background:-webkit-gradient( linear, left top, left bottom, color-stop(75%, #29bd15), color-stop(30%, #0c9c07) );
+     background:-moz-linear-gradient( center top, #29bd15 75%, #0c9c07 30% );
+     background:-ms-linear-gradient( top, #29bd15 75%, #0c9c07 30% );
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#0c9c07');
+     background-color:#29bd15;
+     color:#ffffff;
+     display:inline-block;
+     text-shadow:0px 0px 0px #1570cd;
+      -webkit-box-shadow: 1px 0px 0px 0px #97c4fe;
+      -moz-box-shadow: 1px 0px 0px 0px #97c4fe;
+      box-shadow: 1px 0px 0px 0px #97c4fe;
+ }
+ .speedbutton:active
+ {
+     background:-webkit-gradient( linear, left top, left bottom, color-stop(75%, #0c9c07), color-stop(30%, #29bd15) );
+     background:-moz-linear-gradient( center top, #0c9c07 75%, #29bd15 30% );
+     background:-ms-linear-gradient( top, #0c9c07 75%, #29bd15 30% );
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0c9c07', endColorstr='#29bd15');
+     background-color:#0c9c07;
+ }
  .large_font
  {
      font-size: 300%;
@@ -63,16 +95,15 @@ body{
 
 .varer
 {
-    position: absolute;
+    position: relative;
+    display: inline-block;
     width: 300px;
     height: 400px;
-    bottom: 35%;
-    left: 60%;
 }
 
 .leader
 {
-    position: absolute;
+    position: fixed;
     width: 300px;
     height: 400px;
     bottom: 40%;
@@ -108,7 +139,8 @@ body{
     background-color: white;
  }
 
- .bubble::before{
+ .bubble::before
+ {
     content: '';
     width: 0;
     height: 0;
@@ -119,7 +151,8 @@ body{
     border-color:#000000 transparent transparent;
 }
 
-.bubble{
+.bubble
+{
     width: 300px;
     height: 200px;
     font-size: 16px;
@@ -129,7 +162,8 @@ body{
     background-color: white;
 }
 
-.bubble::after{
+.bubble::after
+{
     content: '';
     width: 0;
     height: 0;
@@ -138,4 +172,28 @@ body{
     bottom: -37px;
     left: 50px;
     border-color:  #ffffff transparent transparent;
+}
+
+.box_img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.calculate
+{
+    display: none;
+    position: fixed;
+    bottom: 40%;
+    left: 35%;
+    width: 1500px;
+    height: 500px;
+}
+
+.cal_word
+{
+    font-size: 300px;
+    width: 200px;
+    height: 400px;
+    display: inline-block;
 }
