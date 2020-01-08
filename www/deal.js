@@ -7,6 +7,7 @@ var operation_array;
 var instruction;
 var data_whole = new Object();
 var current_speed = 3000;//数值越大速度越慢
+var error_message = "";
 function sleep(d){
 	for(var t = Date.now();Date.now() - t <= d;);
 }
@@ -17,11 +18,14 @@ function set_speed(speed){
 
 function display_animation(i)
 {
+	if(i>data_whole.length)
+		return;
 	//alert(data_whole.length);
 	type_animation = data_whole[i]["type_animation"];
 	background_animation = data_whole[i]["background_animation"];
 	var_num = data_whole[i]["var_num"];
 	var_array = data_whole[i]["var_array"];
+	var_value = data_whole[i]["var_value"];
 	operaton_num = data_whole[i]["operation_num"];
 	operation_array = data_whole[i]["operation_array"];
 	instruction = data_whole[i]["instruction"];
@@ -29,7 +33,86 @@ function display_animation(i)
 	{
 		case 1:
 		{
-			
+			if(var_num!=2)
+			{
+				alert("第一类动画中"+i+"出错"); 
+				return;
+			}
+			document.getElementById("leader").innerHTML = "当前执行的为第"+(i+1)+"步动画，为第一类比较动画！";
+			document.getElementById("judge_v1").innerHTML = var_array[0];
+			document.getElementById("judge_v2").innerHTML = var_array[1];
+			anime({
+				targets: '#judge',
+				translateY: -1000,
+				translateX: 300,
+				duration: current_speed,
+				complete:function(){
+					$('#judge').css('display','block');
+					anime({
+						targets: '#judge',
+						translateY: 0,
+						duration: current_speed,
+						complete:function(){
+							//sleep(current_speed/3);
+							if(var_value[0]==var_value[1])
+							{
+								anime({
+									targets:'#judge_sign',
+									translateY:-1000,
+									duration:current_speed/3,
+									complete:function(){
+										document.getElementById("judge_sign").innerHTML = "<img src=\"src/is_equal.png\" ></img>";
+										anime({
+											targets:'#judge_sign',
+											translateY:0,
+											duration:current_speed/3,
+											complete:function(){
+												anime({
+													targets: '#judge',
+													translateY: -1000,
+													duration: current_speed,
+													complete:function(){
+														$('#judge').css('display','none');
+														display_animation(i+1);
+													}
+												});
+											}
+										});
+									}
+								});
+							}
+							else
+							{
+								anime({
+									targets:'#judge_sign',
+									translateY:-1000,
+									duration:current_speed/3,
+									complete:function(){
+										document.getElementById("judge_sign").innerHTML = "<img src=\"src/not_equal.png\" ></img>";
+										anime({
+											targets:'#judge_sign',
+											translateY:0,
+											duration:current_speed/3,
+											complete:function(){
+												anime({
+													targets: '#judge',
+													translateY: -1000,
+													duration: current_speed,
+													complete:function(){
+														$('#judge').css('display','none');
+														display_animation(i+1);
+													}
+												});
+											}
+										});
+									}
+								});
+							}
+							
+						}
+					});
+				}
+			});
 			break;
 		}
 		case 2:
@@ -44,7 +127,7 @@ function display_animation(i)
 		}
 		case 4:
 		{
-			
+			$('.body').css('background','url(./src/3.jpg)  no-repeat center center;');
 			break;
 		}
 		case 5:
@@ -73,10 +156,7 @@ function display_animation(i)
 						complete: function()
 						{
 							$('#main').css('display','none');
-							if(i+1<data_whole.length)
-							{
-								display_animation(i+1);
-							}
+							display_animation(i+1);
 						}
 					});
 				}
@@ -89,7 +169,7 @@ function display_animation(i)
 
 $(document).ready(function(){
 	$("#bt1").click(function () {
-		$.getJSON("test1.json", function (data) {
+		$.getJSON("test.json", function (data) {
 			data_whole = data;
 			anime({
 				targets: '#main',
@@ -97,6 +177,8 @@ $(document).ready(function(){
 				duration: current_speed,
 				complete:function(){
 					$('#main').css('display','none');
+					$('.instruction').css('display','block');
+					$('.leader').css('display','block');
 					display_animation(0);
 				}
 			});
