@@ -152,7 +152,7 @@ function display_animation(i)
 							//sleep(current_speed/3);
 							anime({
 								targets: '#judge_v1_box',
-								translateX: 900,
+								translateX: 1000,
 								duration: current_speed,
 								complete:function(){
 									document.getElementById("judge_v1_box").innerHTML = var_value[0]+"<img src=\"src/open.png\" class=\"box_img\"></img>";
@@ -543,7 +543,7 @@ function display_animation(i)
 
 $(document).ready(function(){
 	$("#bt1").click(function () {
-		$.getJSON("OS_sh.json", function (data) {
+		$.getJSON("OS-sh_2.json", function (data) {
 			data_whole = data;
 			anime({
 				targets: '#main',
@@ -561,7 +561,7 @@ $(document).ready(function(){
 	});
 
 	$("#bt2").click(function () {
-		$.getJSON("OS_nonsh.json", function (data) {
+		$.getJSON("OS-nonsh_2.json", function (data) {
 			data_whole = data;
 			anime({
 				targets: '#main',

@@ -229,11 +229,11 @@ body{
 .box
 {
     display: none;
-    font-size: 75px;
+    font-size: 40px;
     color: #010008;
     width: 200px;
     height: 400px;
-    display: inline-block;
+    display: inline-block; 
     text-align:center
 }
 

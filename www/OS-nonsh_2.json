@@ -70,7 +70,7 @@
         "instruction": "\u5224\u65ad\u5f53\u524d\u6267\u884c\u7a0b\u5e8fi\u8282\u70b9\u662f\u5426\u4e0e\u5185\u5b58\u4e2di\u8282\u70b9\u6307\u9488\u76f8\u540c\n"
     },
     {
-        "type_animation": 1,
+        "type_animation": 3,
         "background_animation": 1,
         "var_num": 1,
         "var_array": [
@@ -84,7 +84,7 @@
         "instruction": "\u8bfb\u53d6imode\u51c6\u5907\u4e4b\u540e\u7684\u6743\u9650\u68c0\u67e5\n"
     },
     {
-        "type_animation": 1,
+        "type_animation": 3,
         "background_animation": 1,
         "var_num": 1,
         "var_array": [
@@ -98,7 +98,7 @@
         "instruction": "\u8bfb\u53d6euid\u51c6\u5907\u4e4b\u540e\u7684\u6743\u9650\u68c0\u67e5\n"
     },
     {
-        "type_animation": 1,
+        "type_animation": 3,
         "background_animation": 1,
         "var_num": 1,
         "var_array": [
@@ -168,7 +168,7 @@
         "background_animation": 1,
         "var_num": 1,
         "var_array": [
-            "bh->b_data[0,1]"
+            "bh_>b_data[0,1]"
         ],
         "var_value": [
             "#!"
@@ -182,7 +182,7 @@
         "background_animation": 1,
         "var_num": 2,
         "var_array": [
-            "bh->b_data[0,1]",
+            "bh_>b_data[0,1]",
             "#!"
         ],
         "var_value": [
@@ -231,7 +231,7 @@
     },
     {
         "type_animation": 2,
-        "background_animation": 1,
+        "background_animation": 2,
         "var_num": 2,
         "var_array": [
             "get_ds()",
@@ -247,7 +247,7 @@
     },
     {
         "type_animation": 2,
-        "background_animation": 1,
+        "background_animation": 2,
         "var_num": 2,
         "var_array": [
             "get_fs()",
@@ -263,7 +263,7 @@
     },
     {
         "type_animation": 3,
-        "background_animation": 1,
+        "background_animation": 2,
         "var_num": 1,
         "var_array": [
             "from_kmem"
@@ -277,7 +277,7 @@
     },
     {
         "type_animation": 1,
-        "background_animation": 1,
+        "background_animation": 2,
         "var_num": 2,
         "var_array": [
             "from_kmem",
@@ -293,7 +293,7 @@
     },
     {
         "type_animation": 2,
-        "background_animation": 1,
+        "background_animation": 2,
         "var_num": 2,
         "var_array": [
             "new_fs",
@@ -309,7 +309,7 @@
     },
     {
         "type_animation": 3,
-        "background_animation": 1,
+        "background_animation": 2,
         "var_num": 1,
         "var_array": [
             "len"
@@ -323,7 +323,7 @@
     },
     {
         "type_animation": 3,
-        "background_animation": 1,
+        "background_animation": 2,
         "var_num": 1,
         "var_array": [
             "p"
@@ -337,7 +337,7 @@
     },
     {
         "type_animation": 9,
-        "background_animation": 1,
+        "background_animation": 2,
         "var_num": 1,
         "var_array": [
             "\u65b0\u9875\u9762"
@@ -351,7 +351,7 @@
     },
     {
         "type_animation": 2,
-        "background_animation": 1,
+        "background_animation": 2,
         "var_num": 2,
         "var_array": [
             "get_fs_byte()\u51fd\u6570",
@@ -367,7 +367,7 @@
     },
     {
         "type_animation": 6,
-        "background_animation": 1,
+        "background_animation": 2,
         "var_num": 0,
         "var_array": [],
         "var_value": [],
@@ -377,7 +377,7 @@
     },
     {
         "type_animation": 6,
-        "background_animation": 1,
+        "background_animation": 2,
         "var_num": 0,
         "var_array": [],
         "var_value": [],
@@ -401,7 +401,7 @@
         "var_num": 2,
         "var_array": [
             "\u65b0\u7a0b\u5e8fi\u8282\u70b9",
-            "current->executable"
+            "current_>executable"
         ],
         "var_value": [
             "inode",
