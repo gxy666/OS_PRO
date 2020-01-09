@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="first.css" />
+<script type="text/javascript" src="anime-master/lib/anime.min.js"></script>
+
+<script type="text/javascript" src="deal.js"></script>
+
+<title>test</title>
+</head>
+<body id="boddy">
+	<div class="speedbutton" id = "sb1">1X</div>
+	<div class="speedbutton" id = "sb2">2X</div>
+	<div class="speedbutton" id = "sb3">0.5X</div>
+<div class="container" id="main_div">
+<div class="row" id="main" >
+<div class="first_rec col-sm-6">
+    <div class="row">
+		<div class="col-sm-10 col-sm-offset-1 large_font" id="content">
+			请选择你要开始的故事<br>
+				（请选择一套数据）
+		</div>
+		<div onselectstart="return false" class="col-sm-8 col-sm-offset-2 button" id="bt1">
+			sh的故事(执行一个shell脚本)
+		</div>
+		<div onselectstart="return false" class="col-sm-8 col-sm-offset-2 button" id="bt2">
+			bin的故事(执行一个二进制文件)
+		</div>
+	</div>
+</div>	
+</div>
+</div>
+<div class="leader" >
+	<div class="bubble" id = "leader">
+		这是一条说明这是一条说这是一条说明这是一条说明
+		这是一条说明这是一条说明这是一条说明这是一条说明
+		这是一条说明这是一条说明这是一条说明这是一条说这是一条说明
+	</div>
+	<img src="src/leader.png" class="leader_img">
+</div>
+<div class="instruction" id="ins">
+	这是一条说明这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说这是一条说明这是一条说明
+	这是一条说明这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说明这是一条说明这是一条说这是一条说明
+	这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说明
+</div>
+
+<div class="error" id="error_div">
+<div class="error_content" id="err"> 
+	这是一条说明这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说这是一条说明这是一条说明
+	这是一条说明这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说明这是一条说明这是一条说这是一条说明
+	这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说明这是一条说明
+	这是一条说明这是一条说明
+</div>
+</div>
+
+<div class="calculate" id="judge">	
+	<div class="box" id="judge_v1_box">
+		12
+		<img src="src/open.png" class="box_img">
+	</div>
+	<div class="varer" >
+		<div class="bubble" id="judge_v1">
+			这是一条说明这是一条说这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这是一条说这是一条说明
+			这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明
+		</div>
+		<img src="src/varer.png" class="varer_img">
+	</div>
+
+	<div class="cal_word" id="judge_sign">
+		<img src="src/equal.png" >
+	</div>
+	
+	<div class="varer">
+		<div class="bubble" id="judge_v2">
+			这是一条说明这是一条说这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这是一条说这是一条说明
+			这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明
+		</div>
+		<img src="src/varer.png" class="varer_img">
+	</div>
+	<div class="box" id="judge_v2_box">
+		13
+		<img src="src/open.png" class="box_img">
+	</div>
+
+</div>
+
+<div class="calculate" id="show" >	
+	<div class="varer" >
+		<div class="bubble" id="show_v1">
+			这是一条说明这是一条说这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这
+		</div>
+		<img src="src/varer.png" class="varer_img" id = "show_img">
+	</div>
+
+	<div class="box" id="show_v1_box" >
+		<img src="src/open.png" class="box_img">
+	</div>
+</div>
+
+<div class="calculate" id = "cal">
+	<div class="varer" >
+		<div class="bubble" id = "cal_v1">
+			这是一条说明这是一条说这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这是一条说这是一条说明
+		</div>
+		<img src="src/varer.png" class="varer_img">
+	</div>
+
+	<div class="cal_word" id="cal_sign_1">
+		+
+	</div>
+	<div class="varer">
+		<div class="bubble"  id = "cal_v2">
+			这是一条说明这是一条说这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这是一条说这是一条说明
+		</div>
+		<img src="src/varer.png" class="varer_img">
+	</div>
+	<div class="cal_word" id="cal_sign_2">
+		=
+	</div>
+	<div class="varer" id="cal_v3_whole">
+		<div class="bubble" id = "cal_v3">
+			这是一条说明这是一条说这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这是一条说明
+			这是一条说明这是一条说明这是一条说明这是一条说这是一条说明
+		</div>
+		<img src="src/varer.png" class="varer_img">
+	</div>
+</div>
+
+<div class="washed_varer" id = "washed">
+	<div class="bubble"  id = "washed_v">
+		这是一条说明这是一条说这是一条说明这是一条说明
+		这是一条说明这是一条说明这是一条说明这是一条说明
+		这是一条说明这是一条说明这是一条说明这是一条说这是一条说明
+	</div>
+	<img src="src/varer.png" class="varer_img">
+</div>
+
+<img src="src/wash.png" class="washer_img" id="washed_i">
+
+
+
+<img src="src/court.png" class="court_img1 first_mov" id="court_i1">
+
+<div class="court_inc1 first_mov" id="ct_n1">
+	文件
+</div>
+
+<img src="src/court.png" class="court_img2 first_mov" id="court_i2">
+
+<div class="court_inc2 first_mov" id="ct_n2">
+	参数和环境空间
+</div>
+
+<img src="src/car.png" class="car_i second_mov" id="car">
+<div class="court_box second_mov" id="court_box" >
+	空页面</br>
+	<img src="src/close.png" class="box_img">
+</div>
+<a href='http://beian.gov.cn' style="position:fixed;bottom:0;left:48%" target='_blank'>辽ICP备19019643号</a>
+</body>
+</html>

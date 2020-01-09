@@ -1,0 +1,230 @@
+#These breakpoints will be enable before boot.
+
+#break kernal/system_call.c:202
+#  comm
+#    start_output
+#      echo do_execve() start\n
+#    stop_output
+#  end
+
+#error
+#break fs/exec.c:196
+#    start_output
+#      echo error!!pos:196 \n
+#    stop_output
+#  end
+
+#main
+
+
+break fs/exec.c:114
+  comm
+    start_output
+      echo exec.c-114 \n \n
+
+      echo new_fs=
+      print new_fs
+      echo \n
+
+      echo old_fs=
+      print old_fs
+      echo \n
+
+    stop_output
+  end
+
+break fs/exec.c:146
+  comm
+    start_output
+      echo exec.c-146 \n \n
+
+      echo pag=
+      print pag
+      echo \n
+
+      echo offset=
+      print offset
+      echo \n
+
+      echo p=
+      print p
+      echo \n
+
+      echo len=
+      print len
+      echo \n
+
+    stop_output
+  end
+
+
+break fs/exec.c:261
+  comm
+    start_output
+      echo exec.c-261 \n \n
+
+      echo sh_bang=
+      print sh_bang
+      echo \n
+
+    stop_output
+  end
+
+break fs/exec.c:199
+  comm
+    start_output
+      echo exec.c-199 \n \n
+
+      echo inode=
+      print inode
+
+    stop_output
+  end
+
+break fs/exec.c:212
+  comm
+    start_output
+      echo exec.c-212 \n \n
+
+      echo eip[1]=
+      print eip[1]
+
+      echo inode=
+      print *inode
+
+      echo current=
+      print *current
+
+      echo e_uid=
+      print e_uid
+      echo \n
+
+      echo e_gid=
+      print e_gid
+      echo \n
+
+      echo i=
+      print i
+      echo \n
+
+    stop_output
+  end
+
+break fs/exec.c:216
+  comm
+    start_output
+      echo exec.c-216 \n \n
+
+      echo i=
+      print i
+      echo \n
+
+    stop_output
+  end
+
+break fs/exec.c:226
+  comm
+    start_output
+      echo exec.c-226 \n \n
+
+      echo bh=
+      print *bh
+      echo \n
+
+      echo b_data
+      print *bh->b_data
+      echo \n
+
+      echo sh_bang=
+      print sh_bang
+      echo \n
+
+    stop_output
+  end
+
+break fs/exec.c:237
+  comm
+    start_output
+      echo exec.c-237 \n \n
+    stop_output
+  end
+
+break fs/exec.c:237
+  comm
+    start_output
+      echo exec.c-237 \n \n
+
+      echo buf=
+      print buf
+      echo \n
+
+    stop_output
+  end
+
+break fs/exec.c:247
+  comm
+    start_output
+      echo exec.c-247 \n \n
+
+      echo cp=
+      print cp
+      echo \n
+
+    stop_output
+  end
+
+break fs/exec.c:260
+  comm
+    start_output
+      echo exec.c-260 \n \n
+
+      echo i_arg=
+      print i_arg
+      echo \n
+
+      echo i_name=
+      print i_name
+      echo \n
+
+    stop_output
+  end
+break fs/exec.c:280
+  comm
+    start_output
+      echo exec.c-280 \n \n
+
+      echo current=
+      print *current
+      echo \n
+
+    stop_output
+  end
+
+
+break fs/exec.c:310
+  comm
+    start_output
+      echo exec.c-310 \n \n
+
+      echo sh_bang=
+      print sh_bang
+      echo \n
+
+    stop_output
+  end
+
+break fs/exec.c:344
+  comm
+    start_output
+      echo exec.c-344 \n \n
+
+      echo p=
+      print p
+      echo \n
+
+      echo ex.a_entry=
+      print ex.a_entry
+      echo \n
+
+    stop_output
+  end

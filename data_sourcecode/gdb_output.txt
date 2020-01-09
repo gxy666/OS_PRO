@@ -1,0 +1,8531 @@
+    argv=0x22020 <argv_rc>, envp=0x22028 <envp_rc>) at exec.c:199
+199		if (!(inode=namei(filename)))		/* get executables inode */
+exec.c-199 
+ 
+inode=$1 = (struct m_inode *) 0x0 <startup_32>
+
+
+    argv=0x22020 <argv_rc>, envp=0x22028 <envp_rc>) at exec.c:212
+212		if (current->euid == inode->i_uid)
+exec.c-212 
+ 
+eip[1]=$2 = 15
+inode=$3 = {i_mode = 33225, i_uid = 0, i_size = 283652, i_mtime = 1079886541, 
+  i_gid = 0 '\000', i_nlinks = 2 '\002', i_zone = {822, 823, 824, 825, 826, 
+    827, 828, 829, 0}, i_wait = 0x0 <startup_32>, i_atime = 1578501090, 
+  i_ctime = 0, i_dev = 769, i_num = 6, i_count = 1, i_lock = 0 '\000', 
+  i_dirt = 1 '\001', i_pipe = 0 '\000', i_mount = 0 '\000', i_seek = 0 '\000', 
+  i_update = 0 '\000'}
+current=$4 = {state = 0, counter = 14, priority = 15, signal = 0, sigaction = {
+    {sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = 0, 
+      sa_restorer = 0x0 <startup_32>} <repeats 32 times>}, blocked = 0, 
+  exit_code = 0, start_code = 134217728, end_code = 0, end_data = 0, brk = 0, 
+  start_stack = 0, pid = 2, father = 1, pgrp = 0, session = 0, leader = 0, 
+  uid = 0, euid = 0, suid = 0, gid = 0, egid = 0, sgid = 0, alarm = 0, 
+  utime = 0, stime = 1, cutime = 0, cstime = 0, start_time = 46, 
+  used_math = 0, tty = -1, umask = 18, pwd = 0x27618 <inode_table+56>, 
+  root = 0x27618 <inode_table+56>, executable = 0x0 <startup_32>, 
+  close_on_exec = 0, filp = {0x29770 <file_table+16>, 0x29760 <file_table>, 
+    0x29760 <file_table>, 0x0 <startup_32> <repeats 17 times>}, ldt = {{a = 0, 
+      b = 0}, {a = 159, b = 146864896}, {a = 159, b = 146862848}}, tss = {
+    back_link = 0, esp0 = 16760832, ss0 = 16, esp1 = 0, ss1 = 0, esp2 = 0, 
+    ss2 = 0, cr3 = 0, eip = 27167, eflags = 514, eax = 0, ecx = 154432, 
+    edx = 26, ebx = 139264, esp = 167632, ebp = 167688, esi = 917504, 
+    edi = 4092, es = 23, cs = 15, ss = 23, ds = 23, fs = 23, gs = 23, 
+    ldt = 72, trace_bitmap = -2147483648, i387 = {cwd = 0, swd = 0, twd = 0, 
+      fip = 0, fcs = 0, foo = 0, fos = 0, st_space = {0 <repeats 20 times>}}}}
+e_uid=$5 = 0
+
+e_gid=$6 = 0
+
+i=$7 = 33225
+
+
+
+    argv=0x22020 <argv_rc>, envp=0x22028 <envp_rc>) at exec.c:216
+216		if (!(i & 1) &&
+exec.c-216 
+ 
+i=$8 = 519
+
+
+
+    argv=0x22020 <argv_rc>, envp=0x22028 <envp_rc>) at exec.c:226
+226		if ((bh->b_data[0] == '#') && (bh->b_data[1] == '!') && (!sh_bang)) {
+exec.c-226 
+ 
+bh=$9 = {b_data = 0x3fac00 "\v\001", b_blocknr = 822, b_dev = 769, 
+  b_uptodate = 1 '\001', b_dirt = 0 '\000', b_count = 1 '\001', 
+  b_lock = 0 '\000', b_wait = 0x0 <startup_32>, b_prev = 0x0 <startup_32>, 
+  b_next = 0x0 <startup_32>, b_prev_free = 0x2a298, b_next_free = 0x2a2e0}
+
+b_data$10 = 11 '\v'
+
+sh_bang=$11 = 0
+
+
+
+    argv=0x22020 <argv_rc>, envp=0x22028 <envp_rc>) at exec.c:310
+310		if (!sh_bang) {
+exec.c-310 
+ 
+sh_bang=$12 = 0
+
+
+
+    p=131068, from_kmem=0) at exec.c:114
+114		old_fs = get_fs();
+exec.c-114 
+ 
+new_fs=$13 = 16
+
+old_fs=$14 = 139264
+
+
+
+    p=131067, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$15 = 0xff8000 ""
+
+offset=$16 = 4091
+
+p=$17 = 131067
+
+len=$18 = 6
+
+
+
+    p=131066, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$19 = 0xff8000 ""
+
+offset=$20 = 4090
+
+p=$21 = 131066
+
+len=$22 = 5
+
+
+
+    p=131065, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$23 = 0xff8000 ""
+
+offset=$24 = 4089
+
+p=$25 = 131065
+
+len=$26 = 4
+
+
+
+    p=131064, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$27 = 0xff8000 ""
+
+offset=$28 = 4088
+
+p=$29 = 131064
+
+len=$30 = 3
+
+
+
+    p=131063, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$31 = 0xff8000 ""
+
+offset=$32 = 4087
+
+p=$33 = 131063
+
+len=$34 = 2
+
+
+
+    p=131062, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$35 = 0xff8000 ""
+
+offset=$36 = 4086
+
+p=$37 = 131062
+
+len=$38 = 1
+
+
+
+    p=131061, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$39 = 0xff8000 ""
+
+offset=$40 = 4085
+
+p=$41 = 131061
+
+len=$42 = 0
+
+
+
+    p=131061, from_kmem=0) at exec.c:114
+114		old_fs = get_fs();
+exec.c-114 
+ 
+new_fs=$43 = 16
+
+old_fs=$44 = 23
+
+
+
+    p=131060, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$45 = 0xff8000 ""
+
+offset=$46 = 4084
+
+p=$47 = 131060
+
+len=$48 = 7
+
+
+
+    p=131059, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$49 = 0xff8000 ""
+
+offset=$50 = 4083
+
+p=$51 = 131059
+
+len=$52 = 6
+
+
+
+    p=131058, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$53 = 0xff8000 ""
+
+offset=$54 = 4082
+
+p=$55 = 131058
+
+len=$56 = 5
+
+
+
+    p=131057, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$57 = 0xff8000 ""
+
+offset=$58 = 4081
+
+p=$59 = 131057
+
+len=$60 = 4
+
+
+
+    p=131056, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$61 = 0xff8000 ""
+
+offset=$62 = 4080
+
+p=$63 = 131056
+
+len=$64 = 3
+
+
+
+    p=131055, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$65 = 0xff8000 ""
+
+offset=$66 = 4079
+
+p=$67 = 131055
+
+len=$68 = 2
+
+
+
+    p=131054, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$69 = 0xff8000 ""
+
+offset=$70 = 4078
+
+p=$71 = 131054
+
+len=$72 = 1
+
+
+
+    p=131053, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$73 = 0xff8000 ""
+
+offset=$74 = 4077
+
+p=$75 = 131053
+
+len=$76 = 0
+
+
+
+    argv=0x22020 <argv_rc>, envp=0x22028 <envp_rc>) at exec.c:344
+344		while (i&0xfff)
+exec.c-344 
+ 
+p=$77 = 67108816
+
+ex.a_entry=$78 = 0
+
+
+
+    argv=0x4bb6c, envp=0x4b0cc) at exec.c:199
+199		if (!(inode=namei(filename)))		/* get executables inode */
+exec.c-199 
+ 
+inode=$79 = (struct m_inode *) 0xb33b <do_wp_page+57>
+
+
+    argv=0x4bb6c, envp=0x4b0cc) at exec.c:212
+212		if (current->euid == inode->i_uid)
+exec.c-212 
+ 
+eip[1]=$80 = 15
+inode=$81 = {i_mode = 33225, i_uid = 0, i_size = 10137, i_mtime = 695433600, 
+  i_gid = 0 '\000', i_nlinks = 1 '\001', i_zone = {3443, 3444, 3445, 3446, 
+    3447, 3448, 3449, 3450, 0}, i_wait = 0x0 <startup_32>, 
+  i_atime = 1578501090, i_ctime = 0, i_dev = 769, i_num = 77, i_count = 1, 
+  i_lock = 0 '\000', i_dirt = 1 '\001', i_pipe = 0 '\000', i_mount = 0 '\000', 
+  i_seek = 0 '\000', i_update = 0 '\000'}
+current=$82 = {state = 0, counter = 15, priority = 15, signal = 0, 
+  sigaction = {{sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1 <startup_32+1>, sa_mask = 0, 
+      sa_flags = -1073741824, sa_restorer = 0x3d92c}, {
+      sa_handler = 0x1 <startup_32+1>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = 0, 
+      sa_restorer = 0x0 <startup_32>}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c} <repeats 17 times>, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = 0, 
+      sa_restorer = 0x0 <startup_32>}}, blocked = 0, exit_code = 0, 
+  start_code = 201326592, end_code = 266240, end_data = 282624, brk = 322560, 
+  start_stack = 67104768, pid = 3, father = 1, pgrp = 0, session = 0, 
+  leader = 0, uid = 0, euid = 0, suid = 0, gid = 0, egid = 0, sgid = 0, 
+  alarm = 0, utime = 0, stime = 0, cutime = 0, cstime = 0, start_time = 64, 
+  used_math = 0, tty = -1, umask = 18, pwd = 0x27618 <inode_table+56>, 
+  root = 0x27618 <inode_table+56>, executable = 0x27768 <inode_table+392>, 
+  close_on_exec = 1024, filp = {0x29780 <file_table+32>, 0x29760 <file_table>, 
+    0x29760 <file_table>, 0x0 <startup_32>, 0x0 <startup_32>, 
+    0x0 <startup_32>, 0x0 <startup_32>, 0x0 <startup_32>, 0x0 <startup_32>, 
+    0x0 <startup_32>, 0x29770 <file_table+16>, 0x0 <startup_32>, 
+    0x0 <startup_32>, 0x0 <startup_32>, 0x0 <startup_32>, 0x0 <startup_32>, 
+    0x0 <startup_32>, 0x0 <startup_32>, 0x0 <startup_32>, 0x0 <startup_32>}, 
+  ldt = {{a = 0, b = 0}, {a = 64, b = 213973760}, {a = 16383, b = 213971712}}, 
+  tss = {back_link = 0, esp0 = 16523264, ss0 = 16, esp1 = 0, ss1 = 0, 
+    esp2 = 0, ss2 = 0, cr3 = 0, eip = 235695, eflags = 582, eax = 0, ecx = 12, 
+    edx = 309952, ebx = 105888, esp = 67108204, ebp = 67108216, esi = 1, 
+    edi = 4092, es = 23, cs = 15, ss = 23, ds = 23, fs = 23, gs = 23, 
+    ldt = 88, trace_bitmap = -2147483648, i387 = {cwd = 0, swd = 0, twd = 0, 
+      fip = 0, fcs = 0, foo = 0, fos = 0, st_space = {0 <repeats 20 times>}}}}
+e_uid=$83 = 0
+
+e_gid=$84 = 0
+
+i=$85 = 33225
+
+
+
+    argv=0x4bb6c, envp=0x4b0cc) at exec.c:216
+216		if (!(i & 1) &&
+exec.c-216 
+ 
+i=$86 = 519
+
+
+
+    argv=0x4bb6c, envp=0x4b0cc) at exec.c:226
+226		if ((bh->b_data[0] == '#') && (bh->b_data[1] == '!') && (!sh_bang)) {
+exec.c-226 
+ 
+bh=$87 = {b_data = 0x3cc800 "\v\001", b_blocknr = 3443, b_dev = 769, 
+  b_uptodate = 1 '\001', b_dirt = 0 '\000', b_count = 1 '\001', 
+  b_lock = 0 '\000', b_wait = 0x0 <startup_32>, b_prev = 0x0 <startup_32>, 
+  b_next = 0x2b39c, b_prev_free = 0x2bc9c, b_next_free = 0x2bce4}
+
+b_data$88 = 11 '\v'
+
+sh_bang=$89 = 0
+
+
+
+    argv=0x4bb6c, envp=0x4b0cc) at exec.c:310
+310		if (!sh_bang) {
+exec.c-310 
+ 
+sh_bang=$90 = 0
+
+
+
+    from_kmem=0) at exec.c:114
+114		old_fs = get_fs();
+exec.c-114 
+ 
+new_fs=$91 = 16
+
+old_fs=$92 = 139264
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$93 = 0xfbe000 ""
+
+offset=$94 = 4091
+
+p=$95 = 131067
+
+len=$96 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$97 = 0xfbe000 ""
+
+offset=$98 = 4090
+
+p=$99 = 131066
+
+len=$100 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$101 = 0xfbe000 ""
+
+offset=$102 = 4089
+
+p=$103 = 131065
+
+len=$104 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$105 = 0xfbe000 ""
+
+offset=$106 = 4088
+
+p=$107 = 131064
+
+len=$108 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$109 = 0xfbe000 ""
+
+offset=$110 = 4087
+
+p=$111 = 131063
+
+len=$112 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$113 = 0xfbe000 ""
+
+offset=$114 = 4086
+
+p=$115 = 131062
+
+len=$116 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$117 = 0xfbe000 ""
+
+offset=$118 = 4085
+
+p=$119 = 131061
+
+len=$120 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$121 = 0xfbe000 ""
+
+offset=$122 = 4084
+
+p=$123 = 131060
+
+len=$124 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$125 = 0xfbe000 ""
+
+offset=$126 = 4083
+
+p=$127 = 131059
+
+len=$128 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$129 = 0xfbe000 ""
+
+offset=$130 = 4082
+
+p=$131 = 131058
+
+len=$132 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$133 = 0xfbe000 ""
+
+offset=$134 = 4081
+
+p=$135 = 131057
+
+len=$136 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$137 = 0xfbe000 ""
+
+offset=$138 = 4080
+
+p=$139 = 131056
+
+len=$140 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$141 = 0xfbe000 ""
+
+offset=$142 = 4079
+
+p=$143 = 131055
+
+len=$144 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$145 = 0xfbe000 ""
+
+offset=$146 = 4078
+
+p=$147 = 131054
+
+len=$148 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$149 = 0xfbe000 ""
+
+offset=$150 = 4077
+
+p=$151 = 131053
+
+len=$152 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$153 = 0xfbe000 ""
+
+offset=$154 = 4076
+
+p=$155 = 131052
+
+len=$156 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$157 = 0xfbe000 ""
+
+offset=$158 = 4075
+
+p=$159 = 131051
+
+len=$160 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$161 = 0xfbe000 ""
+
+offset=$162 = 4074
+
+p=$163 = 131050
+
+len=$164 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$165 = 0xfbe000 ""
+
+offset=$166 = 4073
+
+p=$167 = 131049
+
+len=$168 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$169 = 0xfbe000 ""
+
+offset=$170 = 4072
+
+p=$171 = 131048
+
+len=$172 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$173 = 0xfbe000 ""
+
+offset=$174 = 4071
+
+p=$175 = 131047
+
+len=$176 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$177 = 0xfbe000 ""
+
+offset=$178 = 4070
+
+p=$179 = 131046
+
+len=$180 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$181 = 0xfbe000 ""
+
+offset=$182 = 4069
+
+p=$183 = 131045
+
+len=$184 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$185 = 0xfbe000 ""
+
+offset=$186 = 4068
+
+p=$187 = 131044
+
+len=$188 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$189 = 0xfbe000 ""
+
+offset=$190 = 4067
+
+p=$191 = 131043
+
+len=$192 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$193 = 0xfbe000 ""
+
+offset=$194 = 4066
+
+p=$195 = 131042
+
+len=$196 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$197 = 0xfbe000 ""
+
+offset=$198 = 4065
+
+p=$199 = 131041
+
+len=$200 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$201 = 0xfbe000 ""
+
+offset=$202 = 4064
+
+p=$203 = 131040
+
+len=$204 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$205 = 0xfbe000 ""
+
+offset=$206 = 4063
+
+p=$207 = 131039
+
+len=$208 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$209 = 0xfbe000 ""
+
+offset=$210 = 4062
+
+p=$211 = 131038
+
+len=$212 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$213 = 0xfbe000 ""
+
+offset=$214 = 4061
+
+p=$215 = 131037
+
+len=$216 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$217 = 0xfbe000 ""
+
+offset=$218 = 4060
+
+p=$219 = 131036
+
+len=$220 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$221 = 0xfbe000 ""
+
+offset=$222 = 4059
+
+p=$223 = 131035
+
+len=$224 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$225 = 0xfbe000 ""
+
+offset=$226 = 4058
+
+p=$227 = 131034
+
+len=$228 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$229 = 0xfbe000 ""
+
+offset=$230 = 4057
+
+p=$231 = 131033
+
+len=$232 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$233 = 0xfbe000 ""
+
+offset=$234 = 4056
+
+p=$235 = 131032
+
+len=$236 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$237 = 0xfbe000 ""
+
+offset=$238 = 4055
+
+p=$239 = 131031
+
+len=$240 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$241 = 0xfbe000 ""
+
+offset=$242 = 4054
+
+p=$243 = 131030
+
+len=$244 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$245 = 0xfbe000 ""
+
+offset=$246 = 4053
+
+p=$247 = 131029
+
+len=$248 = 70
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$249 = 0xfbe000 ""
+
+offset=$250 = 4052
+
+p=$251 = 131028
+
+len=$252 = 69
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$253 = 0xfbe000 ""
+
+offset=$254 = 4051
+
+p=$255 = 131027
+
+len=$256 = 68
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$257 = 0xfbe000 ""
+
+offset=$258 = 4050
+
+p=$259 = 131026
+
+len=$260 = 67
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$261 = 0xfbe000 ""
+
+offset=$262 = 4049
+
+p=$263 = 131025
+
+len=$264 = 66
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$265 = 0xfbe000 ""
+
+offset=$266 = 4048
+
+p=$267 = 131024
+
+len=$268 = 65
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$269 = 0xfbe000 ""
+
+offset=$270 = 4047
+
+p=$271 = 131023
+
+len=$272 = 64
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$273 = 0xfbe000 ""
+
+offset=$274 = 4046
+
+p=$275 = 131022
+
+len=$276 = 63
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$277 = 0xfbe000 ""
+
+offset=$278 = 4045
+
+p=$279 = 131021
+
+len=$280 = 62
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$281 = 0xfbe000 ""
+
+offset=$282 = 4044
+
+p=$283 = 131020
+
+len=$284 = 61
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$285 = 0xfbe000 ""
+
+offset=$286 = 4043
+
+p=$287 = 131019
+
+len=$288 = 60
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$289 = 0xfbe000 ""
+
+offset=$290 = 4042
+
+p=$291 = 131018
+
+len=$292 = 59
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$293 = 0xfbe000 ""
+
+offset=$294 = 4041
+
+p=$295 = 131017
+
+len=$296 = 58
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$297 = 0xfbe000 ""
+
+offset=$298 = 4040
+
+p=$299 = 131016
+
+len=$300 = 57
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$301 = 0xfbe000 ""
+
+offset=$302 = 4039
+
+p=$303 = 131015
+
+len=$304 = 56
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$305 = 0xfbe000 ""
+
+offset=$306 = 4038
+
+p=$307 = 131014
+
+len=$308 = 55
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$309 = 0xfbe000 ""
+
+offset=$310 = 4037
+
+p=$311 = 131013
+
+len=$312 = 54
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$313 = 0xfbe000 ""
+
+offset=$314 = 4036
+
+p=$315 = 131012
+
+len=$316 = 53
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$317 = 0xfbe000 ""
+
+offset=$318 = 4035
+
+p=$319 = 131011
+
+len=$320 = 52
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$321 = 0xfbe000 ""
+
+offset=$322 = 4034
+
+p=$323 = 131010
+
+len=$324 = 51
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$325 = 0xfbe000 ""
+
+offset=$326 = 4033
+
+p=$327 = 131009
+
+len=$328 = 50
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$329 = 0xfbe000 ""
+
+offset=$330 = 4032
+
+p=$331 = 131008
+
+len=$332 = 49
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$333 = 0xfbe000 ""
+
+offset=$334 = 4031
+
+p=$335 = 131007
+
+len=$336 = 48
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$337 = 0xfbe000 ""
+
+offset=$338 = 4030
+
+p=$339 = 131006
+
+len=$340 = 47
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$341 = 0xfbe000 ""
+
+offset=$342 = 4029
+
+p=$343 = 131005
+
+len=$344 = 46
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$345 = 0xfbe000 ""
+
+offset=$346 = 4028
+
+p=$347 = 131004
+
+len=$348 = 45
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$349 = 0xfbe000 ""
+
+offset=$350 = 4027
+
+p=$351 = 131003
+
+len=$352 = 44
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$353 = 0xfbe000 ""
+
+offset=$354 = 4026
+
+p=$355 = 131002
+
+len=$356 = 43
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$357 = 0xfbe000 ""
+
+offset=$358 = 4025
+
+p=$359 = 131001
+
+len=$360 = 42
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$361 = 0xfbe000 ""
+
+offset=$362 = 4024
+
+p=$363 = 131000
+
+len=$364 = 41
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$365 = 0xfbe000 ""
+
+offset=$366 = 4023
+
+p=$367 = 130999
+
+len=$368 = 40
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$369 = 0xfbe000 ""
+
+offset=$370 = 4022
+
+p=$371 = 130998
+
+len=$372 = 39
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$373 = 0xfbe000 ""
+
+offset=$374 = 4021
+
+p=$375 = 130997
+
+len=$376 = 38
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$377 = 0xfbe000 ""
+
+offset=$378 = 4020
+
+p=$379 = 130996
+
+len=$380 = 37
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$381 = 0xfbe000 ""
+
+offset=$382 = 4019
+
+p=$383 = 130995
+
+len=$384 = 36
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$385 = 0xfbe000 ""
+
+offset=$386 = 4018
+
+p=$387 = 130994
+
+len=$388 = 35
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$389 = 0xfbe000 ""
+
+offset=$390 = 4017
+
+p=$391 = 130993
+
+len=$392 = 34
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$393 = 0xfbe000 ""
+
+offset=$394 = 4016
+
+p=$395 = 130992
+
+len=$396 = 33
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$397 = 0xfbe000 ""
+
+offset=$398 = 4015
+
+p=$399 = 130991
+
+len=$400 = 32
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$401 = 0xfbe000 ""
+
+offset=$402 = 4014
+
+p=$403 = 130990
+
+len=$404 = 31
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$405 = 0xfbe000 ""
+
+offset=$406 = 4013
+
+p=$407 = 130989
+
+len=$408 = 30
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$409 = 0xfbe000 ""
+
+offset=$410 = 4012
+
+p=$411 = 130988
+
+len=$412 = 29
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$413 = 0xfbe000 ""
+
+offset=$414 = 4011
+
+p=$415 = 130987
+
+len=$416 = 28
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$417 = 0xfbe000 ""
+
+offset=$418 = 4010
+
+p=$419 = 130986
+
+len=$420 = 27
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$421 = 0xfbe000 ""
+
+offset=$422 = 4009
+
+p=$423 = 130985
+
+len=$424 = 26
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$425 = 0xfbe000 ""
+
+offset=$426 = 4008
+
+p=$427 = 130984
+
+len=$428 = 25
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$429 = 0xfbe000 ""
+
+offset=$430 = 4007
+
+p=$431 = 130983
+
+len=$432 = 24
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$433 = 0xfbe000 ""
+
+offset=$434 = 4006
+
+p=$435 = 130982
+
+len=$436 = 23
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$437 = 0xfbe000 ""
+
+offset=$438 = 4005
+
+p=$439 = 130981
+
+len=$440 = 22
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$441 = 0xfbe000 ""
+
+offset=$442 = 4004
+
+p=$443 = 130980
+
+len=$444 = 21
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$445 = 0xfbe000 ""
+
+offset=$446 = 4003
+
+p=$447 = 130979
+
+len=$448 = 20
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$449 = 0xfbe000 ""
+
+offset=$450 = 4002
+
+p=$451 = 130978
+
+len=$452 = 19
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$453 = 0xfbe000 ""
+
+offset=$454 = 4001
+
+p=$455 = 130977
+
+len=$456 = 18
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$457 = 0xfbe000 ""
+
+offset=$458 = 4000
+
+p=$459 = 130976
+
+len=$460 = 17
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$461 = 0xfbe000 ""
+
+offset=$462 = 3999
+
+p=$463 = 130975
+
+len=$464 = 16
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$465 = 0xfbe000 ""
+
+offset=$466 = 3998
+
+p=$467 = 130974
+
+len=$468 = 15
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$469 = 0xfbe000 ""
+
+offset=$470 = 3997
+
+p=$471 = 130973
+
+len=$472 = 14
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$473 = 0xfbe000 ""
+
+offset=$474 = 3996
+
+p=$475 = 130972
+
+len=$476 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$477 = 0xfbe000 ""
+
+offset=$478 = 3995
+
+p=$479 = 130971
+
+len=$480 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$481 = 0xfbe000 ""
+
+offset=$482 = 3994
+
+p=$483 = 130970
+
+len=$484 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$485 = 0xfbe000 ""
+
+offset=$486 = 3993
+
+p=$487 = 130969
+
+len=$488 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$489 = 0xfbe000 ""
+
+offset=$490 = 3992
+
+p=$491 = 130968
+
+len=$492 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$493 = 0xfbe000 ""
+
+offset=$494 = 3991
+
+p=$495 = 130967
+
+len=$496 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$497 = 0xfbe000 ""
+
+offset=$498 = 3990
+
+p=$499 = 130966
+
+len=$500 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$501 = 0xfbe000 ""
+
+offset=$502 = 3989
+
+p=$503 = 130965
+
+len=$504 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$505 = 0xfbe000 ""
+
+offset=$506 = 3988
+
+p=$507 = 130964
+
+len=$508 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$509 = 0xfbe000 ""
+
+offset=$510 = 3987
+
+p=$511 = 130963
+
+len=$512 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$513 = 0xfbe000 ""
+
+offset=$514 = 3986
+
+p=$515 = 130962
+
+len=$516 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$517 = 0xfbe000 ""
+
+offset=$518 = 3985
+
+p=$519 = 130961
+
+len=$520 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$521 = 0xfbe000 ""
+
+offset=$522 = 3984
+
+p=$523 = 130960
+
+len=$524 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$525 = 0xfbe000 ""
+
+offset=$526 = 3983
+
+p=$527 = 130959
+
+len=$528 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$529 = 0xfbe000 ""
+
+offset=$530 = 3982
+
+p=$531 = 130958
+
+len=$532 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$533 = 0xfbe000 ""
+
+offset=$534 = 3981
+
+p=$535 = 130957
+
+len=$536 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$537 = 0xfbe000 ""
+
+offset=$538 = 3980
+
+p=$539 = 130956
+
+len=$540 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$541 = 0xfbe000 ""
+
+offset=$542 = 3979
+
+p=$543 = 130955
+
+len=$544 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$545 = 0xfbe000 ""
+
+offset=$546 = 3978
+
+p=$547 = 130954
+
+len=$548 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$549 = 0xfbe000 ""
+
+offset=$550 = 3977
+
+p=$551 = 130953
+
+len=$552 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$553 = 0xfbe000 ""
+
+offset=$554 = 3976
+
+p=$555 = 130952
+
+len=$556 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$557 = 0xfbe000 ""
+
+offset=$558 = 3975
+
+p=$559 = 130951
+
+len=$560 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$561 = 0xfbe000 ""
+
+offset=$562 = 3974
+
+p=$563 = 130950
+
+len=$564 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$565 = 0xfbe000 ""
+
+offset=$566 = 3973
+
+p=$567 = 130949
+
+len=$568 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$569 = 0xfbe000 ""
+
+offset=$570 = 3972
+
+p=$571 = 130948
+
+len=$572 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$573 = 0xfbe000 ""
+
+offset=$574 = 3971
+
+p=$575 = 130947
+
+len=$576 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$577 = 0xfbe000 ""
+
+offset=$578 = 3970
+
+p=$579 = 130946
+
+len=$580 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$581 = 0xfbe000 ""
+
+offset=$582 = 3969
+
+p=$583 = 130945
+
+len=$584 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$585 = 0xfbe000 ""
+
+offset=$586 = 3968
+
+p=$587 = 130944
+
+len=$588 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$589 = 0xfbe000 ""
+
+offset=$590 = 3967
+
+p=$591 = 130943
+
+len=$592 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$593 = 0xfbe000 ""
+
+offset=$594 = 3966
+
+p=$595 = 130942
+
+len=$596 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$597 = 0xfbe000 ""
+
+offset=$598 = 3965
+
+p=$599 = 130941
+
+len=$600 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$601 = 0xfbe000 ""
+
+offset=$602 = 3964
+
+p=$603 = 130940
+
+len=$604 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$605 = 0xfbe000 ""
+
+offset=$606 = 3963
+
+p=$607 = 130939
+
+len=$608 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$609 = 0xfbe000 ""
+
+offset=$610 = 3962
+
+p=$611 = 130938
+
+len=$612 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$613 = 0xfbe000 ""
+
+offset=$614 = 3961
+
+p=$615 = 130937
+
+len=$616 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$617 = 0xfbe000 ""
+
+offset=$618 = 3960
+
+p=$619 = 130936
+
+len=$620 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$621 = 0xfbe000 ""
+
+offset=$622 = 3959
+
+p=$623 = 130935
+
+len=$624 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$625 = 0xfbe000 ""
+
+offset=$626 = 3958
+
+p=$627 = 130934
+
+len=$628 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$629 = 0xfbe000 ""
+
+offset=$630 = 3957
+
+p=$631 = 130933
+
+len=$632 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$633 = 0xfbe000 ""
+
+offset=$634 = 3956
+
+p=$635 = 130932
+
+len=$636 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$637 = 0xfbe000 ""
+
+offset=$638 = 3955
+
+p=$639 = 130931
+
+len=$640 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$641 = 0xfbe000 ""
+
+offset=$642 = 3954
+
+p=$643 = 130930
+
+len=$644 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$645 = 0xfbe000 ""
+
+offset=$646 = 3953
+
+p=$647 = 130929
+
+len=$648 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$649 = 0xfbe000 ""
+
+offset=$650 = 3952
+
+p=$651 = 130928
+
+len=$652 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$653 = 0xfbe000 ""
+
+offset=$654 = 3951
+
+p=$655 = 130927
+
+len=$656 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$657 = 0xfbe000 ""
+
+offset=$658 = 3950
+
+p=$659 = 130926
+
+len=$660 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$661 = 0xfbe000 ""
+
+offset=$662 = 3949
+
+p=$663 = 130925
+
+len=$664 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$665 = 0xfbe000 ""
+
+offset=$666 = 3948
+
+p=$667 = 130924
+
+len=$668 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$669 = 0xfbe000 ""
+
+offset=$670 = 3947
+
+p=$671 = 130923
+
+len=$672 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$673 = 0xfbe000 ""
+
+offset=$674 = 3946
+
+p=$675 = 130922
+
+len=$676 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$677 = 0xfbe000 ""
+
+offset=$678 = 3945
+
+p=$679 = 130921
+
+len=$680 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$681 = 0xfbe000 ""
+
+offset=$682 = 3944
+
+p=$683 = 130920
+
+len=$684 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$685 = 0xfbe000 ""
+
+offset=$686 = 3943
+
+p=$687 = 130919
+
+len=$688 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$689 = 0xfbe000 ""
+
+offset=$690 = 3942
+
+p=$691 = 130918
+
+len=$692 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$693 = 0xfbe000 ""
+
+offset=$694 = 3941
+
+p=$695 = 130917
+
+len=$696 = 0
+
+
+
+    from_kmem=0) at exec.c:114
+114		old_fs = get_fs();
+exec.c-114 
+ 
+new_fs=$697 = 16
+
+old_fs=$698 = 23
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$699 = 0xfbe000 ""
+
+offset=$700 = 3940
+
+p=$701 = 130916
+
+len=$702 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$703 = 0xfbe000 ""
+
+offset=$704 = 3939
+
+p=$705 = 130915
+
+len=$706 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$707 = 0xfbe000 ""
+
+offset=$708 = 3938
+
+p=$709 = 130914
+
+len=$710 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$711 = 0xfbe000 ""
+
+offset=$712 = 3937
+
+p=$713 = 130913
+
+len=$714 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$715 = 0xfbe000 ""
+
+offset=$716 = 3936
+
+p=$717 = 130912
+
+len=$718 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$719 = 0xfbe000 ""
+
+offset=$720 = 3935
+
+p=$721 = 130911
+
+len=$722 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$723 = 0xfbe000 ""
+
+offset=$724 = 3934
+
+p=$725 = 130910
+
+len=$726 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$727 = 0xfbe000 ""
+
+offset=$728 = 3933
+
+p=$729 = 130909
+
+len=$730 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$731 = 0xfbe000 ""
+
+offset=$732 = 3932
+
+p=$733 = 130908
+
+len=$734 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$735 = 0xfbe000 ""
+
+offset=$736 = 3931
+
+p=$737 = 130907
+
+len=$738 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$739 = 0xfbe000 ""
+
+offset=$740 = 3930
+
+p=$741 = 130906
+
+len=$742 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$743 = 0xfbe000 ""
+
+offset=$744 = 3929
+
+p=$745 = 130905
+
+len=$746 = 0
+
+
+
+    argv=0x4bb6c, envp=0x4b0cc) at exec.c:344
+344		while (i&0xfff)
+exec.c-344 
+ 
+p=$747 = 67108640
+
+ex.a_entry=$748 = 0
+
+
+
+    argv=0x22030 <argv>, envp=0x22038 <envp>) at exec.c:199
+199		if (!(inode=namei(filename)))		/* get executables inode */
+exec.c-199 
+ 
+inode=$749 = (struct m_inode *) 0x2 <startup_32+2>
+
+
+    argv=0x22030 <argv>, envp=0x22038 <envp>) at exec.c:212
+212		if (current->euid == inode->i_uid)
+exec.c-212 
+ 
+eip[1]=$750 = 15
+inode=$751 = {i_mode = 33225, i_uid = 0, i_size = 283652, 
+  i_mtime = 1079886541, i_gid = 0 '\000', i_nlinks = 2 '\002', i_zone = {822, 
+    823, 824, 825, 826, 827, 828, 829, 0}, i_wait = 0x0 <startup_32>, 
+  i_atime = 1578501090, i_ctime = 0, i_dev = 769, i_num = 6, i_count = 1, 
+  i_lock = 0 '\000', i_dirt = 1 '\001', i_pipe = 0 '\000', i_mount = 0 '\000', 
+  i_seek = 0 '\000', i_update = 0 '\000'}
+current=$752 = {state = 0, counter = 14, priority = 15, signal = 0, 
+  sigaction = {{sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = 0, 
+      sa_restorer = 0x0 <startup_32>} <repeats 32 times>}, blocked = 0, 
+  exit_code = 0, start_code = 134217728, end_code = 0, end_data = 0, brk = 0, 
+  start_stack = 0, pid = 4, father = 1, pgrp = 4, session = 4, leader = 1, 
+  uid = 0, euid = 0, suid = 0, gid = 0, egid = 0, sgid = 0, alarm = 0, 
+  utime = 0, stime = 1, cutime = 0, cstime = 0, start_time = 69, 
+  used_math = 0, tty = 0, umask = 18, pwd = 0x27618 <inode_table+56>, 
+  root = 0x27618 <inode_table+56>, executable = 0x0 <startup_32>, 
+  close_on_exec = 0, filp = {0x29770 <file_table+16>, 0x29770 <file_table+16>, 
+    0x29770 <file_table+16>, 0x0 <startup_32> <repeats 17 times>}, ldt = {{
+      a = 0, b = 0}, {a = 159, b = 146864896}, {a = 159, b = 146862848}}, 
+  tss = {back_link = 0, esp0 = 16769024, ss0 = 16, esp1 = 0, ss1 = 0, 
+    esp2 = 0, ss2 = 0, cr3 = 0, eip = 27350, eflags = 582, eax = 0, 
+    ecx = 167632, edx = 0, ebx = 139264, esp = 167632, ebp = 167688, 
+    esi = 917504, edi = 4092, es = 23, cs = 15, ss = 23, ds = 23, fs = 23, 
+    gs = 23, ldt = 72, trace_bitmap = -2147483648, i387 = {cwd = 0, swd = 0, 
+      twd = 0, fip = 0, fcs = 0, foo = 0, fos = 0, st_space = {
+        0 <repeats 20 times>}}}}
+e_uid=$753 = 0
+
+e_gid=$754 = 0
+
+i=$755 = 33225
+
+
+
+    argv=0x22030 <argv>, envp=0x22038 <envp>) at exec.c:216
+216		if (!(i & 1) &&
+exec.c-216 
+ 
+i=$756 = 519
+
+
+
+    argv=0x22030 <argv>, envp=0x22038 <envp>) at exec.c:226
+226		if ((bh->b_data[0] == '#') && (bh->b_data[1] == '!') && (!sh_bang)) {
+exec.c-226 
+ 
+bh=$757 = {b_data = 0x3fac00 "\v\001", b_blocknr = 822, b_dev = 769, 
+  b_uptodate = 1 '\001', b_dirt = 0 '\000', b_count = 1 '\001', 
+  b_lock = 0 '\000', b_wait = 0x0 <startup_32>, b_prev = 0x0 <startup_32>, 
+  b_next = 0x0 <startup_32>, b_prev_free = 0x2a298, b_next_free = 0x2a2e0}
+
+b_data$758 = 11 '\v'
+
+sh_bang=$759 = 0
+
+
+
+    argv=0x22030 <argv>, envp=0x22038 <envp>) at exec.c:310
+310		if (!sh_bang) {
+exec.c-310 
+ 
+sh_bang=$760 = 0
+
+
+
+    p=131068, from_kmem=0) at exec.c:114
+114		old_fs = get_fs();
+exec.c-114 
+ 
+new_fs=$761 = 16
+
+old_fs=$762 = 139264
+
+
+
+    p=131067, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$763 = 0xff4000 ""
+
+offset=$764 = 4091
+
+p=$765 = 131067
+
+len=$766 = 14
+
+
+
+    p=131066, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$767 = 0xff4000 ""
+
+offset=$768 = 4090
+
+p=$769 = 131066
+
+len=$770 = 13
+
+
+
+    p=131065, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$771 = 0xff4000 ""
+
+offset=$772 = 4089
+
+p=$773 = 131065
+
+len=$774 = 12
+
+
+
+    p=131064, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$775 = 0xff4000 ""
+
+offset=$776 = 4088
+
+p=$777 = 131064
+
+len=$778 = 11
+
+
+
+    p=131063, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$779 = 0xff4000 ""
+
+offset=$780 = 4087
+
+p=$781 = 131063
+
+len=$782 = 10
+
+
+
+    p=131062, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$783 = 0xff4000 ""
+
+offset=$784 = 4086
+
+p=$785 = 131062
+
+len=$786 = 9
+
+
+
+    p=131061, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$787 = 0xff4000 ""
+
+offset=$788 = 4085
+
+p=$789 = 131061
+
+len=$790 = 8
+
+
+
+    p=131060, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$791 = 0xff4000 ""
+
+offset=$792 = 4084
+
+p=$793 = 131060
+
+len=$794 = 7
+
+
+
+    p=131059, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$795 = 0xff4000 ""
+
+offset=$796 = 4083
+
+p=$797 = 131059
+
+len=$798 = 6
+
+
+
+    p=131058, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$799 = 0xff4000 ""
+
+offset=$800 = 4082
+
+p=$801 = 131058
+
+len=$802 = 5
+
+
+
+    p=131057, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$803 = 0xff4000 ""
+
+offset=$804 = 4081
+
+p=$805 = 131057
+
+len=$806 = 4
+
+
+
+    p=131056, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$807 = 0xff4000 ""
+
+offset=$808 = 4080
+
+p=$809 = 131056
+
+len=$810 = 3
+
+
+
+    p=131055, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$811 = 0xff4000 ""
+
+offset=$812 = 4079
+
+p=$813 = 131055
+
+len=$814 = 2
+
+
+
+    p=131054, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$815 = 0xff4000 ""
+
+offset=$816 = 4078
+
+p=$817 = 131054
+
+len=$818 = 1
+
+
+
+    p=131053, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$819 = 0xff4000 ""
+
+offset=$820 = 4077
+
+p=$821 = 131053
+
+len=$822 = 0
+
+
+
+    p=131053, from_kmem=0) at exec.c:114
+114		old_fs = get_fs();
+exec.c-114 
+ 
+new_fs=$823 = 16
+
+old_fs=$824 = 23
+
+
+
+    p=131052, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$825 = 0xff4000 ""
+
+offset=$826 = 4076
+
+p=$827 = 131052
+
+len=$828 = 8
+
+
+
+    p=131051, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$829 = 0xff4000 ""
+
+offset=$830 = 4075
+
+p=$831 = 131051
+
+len=$832 = 7
+
+
+
+    p=131050, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$833 = 0xff4000 ""
+
+offset=$834 = 4074
+
+p=$835 = 131050
+
+len=$836 = 6
+
+
+
+    p=131049, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$837 = 0xff4000 ""
+
+offset=$838 = 4073
+
+p=$839 = 131049
+
+len=$840 = 5
+
+
+
+    p=131048, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$841 = 0xff4000 ""
+
+offset=$842 = 4072
+
+p=$843 = 131048
+
+len=$844 = 4
+
+
+
+    p=131047, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$845 = 0xff4000 ""
+
+offset=$846 = 4071
+
+p=$847 = 131047
+
+len=$848 = 3
+
+
+
+    p=131046, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$849 = 0xff4000 ""
+
+offset=$850 = 4070
+
+p=$851 = 131046
+
+len=$852 = 2
+
+
+
+    p=131045, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$853 = 0xff4000 ""
+
+offset=$854 = 4069
+
+p=$855 = 131045
+
+len=$856 = 1
+
+
+
+    p=131044, from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$857 = 0xff4000 ""
+
+offset=$858 = 4068
+
+p=$859 = 131044
+
+len=$860 = 0
+
+
+
+    argv=0x22030 <argv>, envp=0x22038 <envp>) at exec.c:344
+344		while (i&0xfff)
+exec.c-344 
+ 
+p=$861 = 67108808
+
+ex.a_entry=$862 = 0
+
+
+
+    at exec.c:344
+344		while (i&0xfff)
+exec.c-344 
+ 
+p=$863 = 3264141966
+
+ex.a_entry=$864 = 2207065124
+
+
+
+    at exec.c:344
+344		while (i&0xfff)
+exec.c-344 
+ 
+p=$865 = 0
+
+ex.a_entry=$866 = 0
+
+
+
+    argv=0x5df6c, envp=0x4b14c) at exec.c:199
+199		if (!(inode=namei(filename)))		/* get executables inode */
+exec.c-199 
+ 
+inode=$867 = (struct m_inode *) 0xb33b <do_wp_page+57>
+
+
+    argv=0x5df6c, envp=0x4b14c) at exec.c:212
+212		if (current->euid == inode->i_uid)
+exec.c-212 
+ 
+eip[1]=$868 = 15
+inode=$869 = {i_mode = 33152, i_uid = 0, i_size = 18, i_mtime = 1578467481, 
+  i_gid = 0 '\000', i_nlinks = 1 '\001', i_zone = {4792, 0, 0, 0, 0, 0, 0, 0, 
+    0}, i_wait = 0x0 <startup_32>, i_atime = 1578501129, i_ctime = 0, 
+  i_dev = 769, i_num = 553, i_count = 1, i_lock = 0 '\000', i_dirt = 1 '\001', 
+  i_pipe = 0 '\000', i_mount = 0 '\000', i_seek = 0 '\000', 
+  i_update = 0 '\000'}
+current=$870 = {state = 0, counter = 15, priority = 15, signal = 0, 
+  sigaction = {{sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1730 <pg0+1840>, sa_mask = 0, 
+      sa_flags = -1073741824, sa_restorer = 0x3d92c}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = 0, 
+      sa_restorer = 0x0 <startup_32>}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, sa_mask = 0, 
+      sa_flags = -1073741824, sa_restorer = 0x3d92c}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c} <repeats 17 times>, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = 0, 
+      sa_restorer = 0x0 <startup_32>}}, blocked = 0, exit_code = 0, 
+  start_code = 268435456, end_code = 266240, end_data = 282624, brk = 406528, 
+  start_stack = 67104768, pid = 6, father = 4, pgrp = 4, session = 4, 
+  leader = 0, uid = 0, euid = 0, suid = 0, gid = 0, egid = 0, sgid = 0, 
+  alarm = 0, utime = 0, stime = 0, cutime = 0, cstime = 0, start_time = 3950, 
+  used_math = 0, tty = 0, umask = 54, pwd = 0x276f8 <inode_table+280>, 
+  root = 0x27618 <inode_table+56>, executable = 0x27768 <inode_table+392>, 
+  close_on_exec = 0, filp = {0x29770 <file_table+16>, 0x29770 <file_table+16>, 
+    0x29770 <file_table+16>, 0x0 <startup_32> <repeats 17 times>}, ldt = {{
+      a = 0, b = 0}, {a = 64, b = 281082624}, {a = 16383, b = 281080576}}, 
+  tss = {back_link = 0, esp0 = 16359424, ss0 = 16, esp1 = 0, ss1 = 0, 
+    esp2 = 0, ss2 = 0, cr3 = 0, eip = 235695, eflags = 582, eax = 0, ecx = 7, 
+    edx = 384800, ebx = 20, esp = 67108312, ebp = 67108324, esi = 1, 
+    edi = 4092, es = 23, cs = 15, ss = 23, ds = 23, fs = 23, gs = 23, 
+    ldt = 104, trace_bitmap = -2147483648, i387 = {cwd = 0, swd = 0, twd = 0, 
+      fip = 0, fcs = 0, foo = 0, fos = 0, st_space = {0 <repeats 20 times>}}}}
+e_uid=$871 = 0
+
+e_gid=$872 = 0
+
+i=$873 = 33152
+
+
+
+    argv=0x5df6c, envp=0x4b14c) at exec.c:216
+216		if (!(i & 1) &&
+exec.c-216 
+ 
+i=$874 = 518
+
+
+
+    argv=0x5df6c, envp=0x4b14c) at exec.c:199
+199		if (!(inode=namei(filename)))		/* get executables inode */
+exec.c-199 
+ 
+inode=$875 = (struct m_inode *) 0xb33b <do_wp_page+57>
+
+
+    argv=0x5df6c, envp=0x4b14c) at exec.c:212
+212		if (current->euid == inode->i_uid)
+exec.c-212 
+ 
+eip[1]=$876 = 15
+inode=$877 = {i_mode = 33225, i_uid = 0, i_size = 283652, 
+  i_mtime = 1079886541, i_gid = 0 '\000', i_nlinks = 2 '\002', i_zone = {822, 
+    823, 824, 825, 826, 827, 828, 829, 0}, i_wait = 0x0 <startup_32>, 
+  i_atime = 1578501129, i_ctime = 0, i_dev = 769, i_num = 6, i_count = 3, 
+  i_lock = 0 '\000', i_dirt = 1 '\001', i_pipe = 0 '\000', i_mount = 0 '\000', 
+  i_seek = 0 '\000', i_update = 0 '\000'}
+current=$878 = {state = 0, counter = 14, priority = 15, signal = 0, 
+  sigaction = {{sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1730 <pg0+1840>, sa_mask = 0, 
+      sa_flags = -1073741824, sa_restorer = 0x3d92c}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = 0, 
+      sa_restorer = 0x0 <startup_32>}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, sa_mask = 0, 
+      sa_flags = -1073741824, sa_restorer = 0x3d92c}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c} <repeats 17 times>, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = 0, 
+      sa_restorer = 0x0 <startup_32>}}, blocked = 0, exit_code = 0, 
+  start_code = 268435456, end_code = 266240, end_data = 282624, brk = 406528, 
+  start_stack = 67104768, pid = 6, father = 4, pgrp = 4, session = 4, 
+  leader = 0, uid = 0, euid = 0, suid = 0, gid = 0, egid = 0, sgid = 0, 
+  alarm = 0, utime = 0, stime = 1, cutime = 0, cstime = 0, start_time = 3950, 
+  used_math = 0, tty = 0, umask = 54, pwd = 0x276f8 <inode_table+280>, 
+  root = 0x27618 <inode_table+56>, executable = 0x27768 <inode_table+392>, 
+  close_on_exec = 0, filp = {0x29770 <file_table+16>, 0x29770 <file_table+16>, 
+    0x29770 <file_table+16>, 0x0 <startup_32> <repeats 17 times>}, ldt = {{
+      a = 0, b = 0}, {a = 64, b = 281082624}, {a = 16383, b = 281080576}}, 
+  tss = {back_link = 0, esp0 = 16359424, ss0 = 16, esp1 = 0, ss1 = 0, 
+    esp2 = 0, ss2 = 0, cr3 = 0, eip = 235695, eflags = 582, eax = 0, ecx = 7, 
+    edx = 384800, ebx = 20, esp = 67108312, ebp = 67108324, esi = 1, 
+    edi = 4092, es = 23, cs = 15, ss = 23, ds = 23, fs = 23, gs = 23, 
+    ldt = 104, trace_bitmap = -2147483648, i387 = {cwd = 0, swd = 0, twd = 0, 
+      fip = 0, fcs = 0, foo = 0, fos = 0, st_space = {0 <repeats 20 times>}}}}
+e_uid=$879 = 0
+
+e_gid=$880 = 0
+
+i=$881 = 33225
+
+
+
+    argv=0x5df6c, envp=0x4b14c) at exec.c:216
+216		if (!(i & 1) &&
+exec.c-216 
+ 
+i=$882 = 519
+
+
+
+    argv=0x5df6c, envp=0x4b14c) at exec.c:226
+226		if ((bh->b_data[0] == '#') && (bh->b_data[1] == '!') && (!sh_bang)) {
+exec.c-226 
+ 
+bh=$883 = {b_data = 0x3fac00 "\v\001", b_blocknr = 822, b_dev = 769, 
+  b_uptodate = 1 '\001', b_dirt = 0 '\000', b_count = 1 '\001', 
+  b_lock = 0 '\000', b_wait = 0x0 <startup_32>, b_prev = 0x0 <startup_32>, 
+  b_next = 0x0 <startup_32>, b_prev_free = 0x2a298, b_next_free = 0x2a2e0}
+
+b_data$884 = 11 '\v'
+
+sh_bang=$885 = 0
+
+
+
+    argv=0x5df6c, envp=0x4b14c) at exec.c:310
+310		if (!sh_bang) {
+exec.c-310 
+ 
+sh_bang=$886 = 0
+
+
+
+    from_kmem=0) at exec.c:114
+114		old_fs = get_fs();
+exec.c-114 
+ 
+new_fs=$887 = 16
+
+old_fs=$888 = 139264
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$889 = 0xf8e000 ""
+
+offset=$890 = 4091
+
+p=$891 = 131067
+
+len=$892 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$893 = 0xf8e000 ""
+
+offset=$894 = 4090
+
+p=$895 = 131066
+
+len=$896 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$897 = 0xf8e000 ""
+
+offset=$898 = 4089
+
+p=$899 = 131065
+
+len=$900 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$901 = 0xf8e000 ""
+
+offset=$902 = 4088
+
+p=$903 = 131064
+
+len=$904 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$905 = 0xf8e000 ""
+
+offset=$906 = 4087
+
+p=$907 = 131063
+
+len=$908 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$909 = 0xf8e000 ""
+
+offset=$910 = 4086
+
+p=$911 = 131062
+
+len=$912 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$913 = 0xf8e000 ""
+
+offset=$914 = 4085
+
+p=$915 = 131061
+
+len=$916 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$917 = 0xf8e000 ""
+
+offset=$918 = 4084
+
+p=$919 = 131060
+
+len=$920 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$921 = 0xf8e000 ""
+
+offset=$922 = 4083
+
+p=$923 = 131059
+
+len=$924 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$925 = 0xf8e000 ""
+
+offset=$926 = 4082
+
+p=$927 = 131058
+
+len=$928 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$929 = 0xf8e000 ""
+
+offset=$930 = 4081
+
+p=$931 = 131057
+
+len=$932 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$933 = 0xf8e000 ""
+
+offset=$934 = 4080
+
+p=$935 = 131056
+
+len=$936 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$937 = 0xf8e000 ""
+
+offset=$938 = 4079
+
+p=$939 = 131055
+
+len=$940 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$941 = 0xf8e000 ""
+
+offset=$942 = 4078
+
+p=$943 = 131054
+
+len=$944 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$945 = 0xf8e000 ""
+
+offset=$946 = 4077
+
+p=$947 = 131053
+
+len=$948 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$949 = 0xf8e000 ""
+
+offset=$950 = 4076
+
+p=$951 = 131052
+
+len=$952 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$953 = 0xf8e000 ""
+
+offset=$954 = 4075
+
+p=$955 = 131051
+
+len=$956 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$957 = 0xf8e000 ""
+
+offset=$958 = 4074
+
+p=$959 = 131050
+
+len=$960 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$961 = 0xf8e000 ""
+
+offset=$962 = 4073
+
+p=$963 = 131049
+
+len=$964 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$965 = 0xf8e000 ""
+
+offset=$966 = 4072
+
+p=$967 = 131048
+
+len=$968 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$969 = 0xf8e000 ""
+
+offset=$970 = 4071
+
+p=$971 = 131047
+
+len=$972 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$973 = 0xf8e000 ""
+
+offset=$974 = 4070
+
+p=$975 = 131046
+
+len=$976 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$977 = 0xf8e000 ""
+
+offset=$978 = 4069
+
+p=$979 = 131045
+
+len=$980 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$981 = 0xf8e000 ""
+
+offset=$982 = 4068
+
+p=$983 = 131044
+
+len=$984 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$985 = 0xf8e000 ""
+
+offset=$986 = 4067
+
+p=$987 = 131043
+
+len=$988 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$989 = 0xf8e000 ""
+
+offset=$990 = 4066
+
+p=$991 = 131042
+
+len=$992 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$993 = 0xf8e000 ""
+
+offset=$994 = 4065
+
+p=$995 = 131041
+
+len=$996 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$997 = 0xf8e000 ""
+
+offset=$998 = 4064
+
+p=$999 = 131040
+
+len=$1000 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1001 = 0xf8e000 ""
+
+offset=$1002 = 4063
+
+p=$1003 = 131039
+
+len=$1004 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1005 = 0xf8e000 ""
+
+offset=$1006 = 4062
+
+p=$1007 = 131038
+
+len=$1008 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1009 = 0xf8e000 ""
+
+offset=$1010 = 4061
+
+p=$1011 = 131037
+
+len=$1012 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1013 = 0xf8e000 ""
+
+offset=$1014 = 4060
+
+p=$1015 = 131036
+
+len=$1016 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1017 = 0xf8e000 ""
+
+offset=$1018 = 4059
+
+p=$1019 = 131035
+
+len=$1020 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1021 = 0xf8e000 ""
+
+offset=$1022 = 4058
+
+p=$1023 = 131034
+
+len=$1024 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1025 = 0xf8e000 ""
+
+offset=$1026 = 4057
+
+p=$1027 = 131033
+
+len=$1028 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1029 = 0xf8e000 ""
+
+offset=$1030 = 4056
+
+p=$1031 = 131032
+
+len=$1032 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1033 = 0xf8e000 ""
+
+offset=$1034 = 4055
+
+p=$1035 = 131031
+
+len=$1036 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1037 = 0xf8e000 ""
+
+offset=$1038 = 4054
+
+p=$1039 = 131030
+
+len=$1040 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1041 = 0xf8e000 ""
+
+offset=$1042 = 4053
+
+p=$1043 = 131029
+
+len=$1044 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1045 = 0xf8e000 ""
+
+offset=$1046 = 4052
+
+p=$1047 = 131028
+
+len=$1048 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1049 = 0xf8e000 ""
+
+offset=$1050 = 4051
+
+p=$1051 = 131027
+
+len=$1052 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1053 = 0xf8e000 ""
+
+offset=$1054 = 4050
+
+p=$1055 = 131026
+
+len=$1056 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1057 = 0xf8e000 ""
+
+offset=$1058 = 4049
+
+p=$1059 = 131025
+
+len=$1060 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1061 = 0xf8e000 ""
+
+offset=$1062 = 4048
+
+p=$1063 = 131024
+
+len=$1064 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1065 = 0xf8e000 ""
+
+offset=$1066 = 4047
+
+p=$1067 = 131023
+
+len=$1068 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1069 = 0xf8e000 ""
+
+offset=$1070 = 4046
+
+p=$1071 = 131022
+
+len=$1072 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1073 = 0xf8e000 ""
+
+offset=$1074 = 4045
+
+p=$1075 = 131021
+
+len=$1076 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1077 = 0xf8e000 ""
+
+offset=$1078 = 4044
+
+p=$1079 = 131020
+
+len=$1080 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1081 = 0xf8e000 ""
+
+offset=$1082 = 4043
+
+p=$1083 = 131019
+
+len=$1084 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1085 = 0xf8e000 ""
+
+offset=$1086 = 4042
+
+p=$1087 = 131018
+
+len=$1088 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1089 = 0xf8e000 ""
+
+offset=$1090 = 4041
+
+p=$1091 = 131017
+
+len=$1092 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1093 = 0xf8e000 ""
+
+offset=$1094 = 4040
+
+p=$1095 = 131016
+
+len=$1096 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1097 = 0xf8e000 ""
+
+offset=$1098 = 4039
+
+p=$1099 = 131015
+
+len=$1100 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1101 = 0xf8e000 ""
+
+offset=$1102 = 4038
+
+p=$1103 = 131014
+
+len=$1104 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1105 = 0xf8e000 ""
+
+offset=$1106 = 4037
+
+p=$1107 = 131013
+
+len=$1108 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1109 = 0xf8e000 ""
+
+offset=$1110 = 4036
+
+p=$1111 = 131012
+
+len=$1112 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1113 = 0xf8e000 ""
+
+offset=$1114 = 4035
+
+p=$1115 = 131011
+
+len=$1116 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1117 = 0xf8e000 ""
+
+offset=$1118 = 4034
+
+p=$1119 = 131010
+
+len=$1120 = 70
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1121 = 0xf8e000 ""
+
+offset=$1122 = 4033
+
+p=$1123 = 131009
+
+len=$1124 = 69
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1125 = 0xf8e000 ""
+
+offset=$1126 = 4032
+
+p=$1127 = 131008
+
+len=$1128 = 68
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1129 = 0xf8e000 ""
+
+offset=$1130 = 4031
+
+p=$1131 = 131007
+
+len=$1132 = 67
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1133 = 0xf8e000 ""
+
+offset=$1134 = 4030
+
+p=$1135 = 131006
+
+len=$1136 = 66
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1137 = 0xf8e000 ""
+
+offset=$1138 = 4029
+
+p=$1139 = 131005
+
+len=$1140 = 65
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1141 = 0xf8e000 ""
+
+offset=$1142 = 4028
+
+p=$1143 = 131004
+
+len=$1144 = 64
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1145 = 0xf8e000 ""
+
+offset=$1146 = 4027
+
+p=$1147 = 131003
+
+len=$1148 = 63
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1149 = 0xf8e000 ""
+
+offset=$1150 = 4026
+
+p=$1151 = 131002
+
+len=$1152 = 62
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1153 = 0xf8e000 ""
+
+offset=$1154 = 4025
+
+p=$1155 = 131001
+
+len=$1156 = 61
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1157 = 0xf8e000 ""
+
+offset=$1158 = 4024
+
+p=$1159 = 131000
+
+len=$1160 = 60
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1161 = 0xf8e000 ""
+
+offset=$1162 = 4023
+
+p=$1163 = 130999
+
+len=$1164 = 59
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1165 = 0xf8e000 ""
+
+offset=$1166 = 4022
+
+p=$1167 = 130998
+
+len=$1168 = 58
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1169 = 0xf8e000 ""
+
+offset=$1170 = 4021
+
+p=$1171 = 130997
+
+len=$1172 = 57
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1173 = 0xf8e000 ""
+
+offset=$1174 = 4020
+
+p=$1175 = 130996
+
+len=$1176 = 56
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1177 = 0xf8e000 ""
+
+offset=$1178 = 4019
+
+p=$1179 = 130995
+
+len=$1180 = 55
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1181 = 0xf8e000 ""
+
+offset=$1182 = 4018
+
+p=$1183 = 130994
+
+len=$1184 = 54
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1185 = 0xf8e000 ""
+
+offset=$1186 = 4017
+
+p=$1187 = 130993
+
+len=$1188 = 53
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1189 = 0xf8e000 ""
+
+offset=$1190 = 4016
+
+p=$1191 = 130992
+
+len=$1192 = 52
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1193 = 0xf8e000 ""
+
+offset=$1194 = 4015
+
+p=$1195 = 130991
+
+len=$1196 = 51
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1197 = 0xf8e000 ""
+
+offset=$1198 = 4014
+
+p=$1199 = 130990
+
+len=$1200 = 50
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1201 = 0xf8e000 ""
+
+offset=$1202 = 4013
+
+p=$1203 = 130989
+
+len=$1204 = 49
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1205 = 0xf8e000 ""
+
+offset=$1206 = 4012
+
+p=$1207 = 130988
+
+len=$1208 = 48
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1209 = 0xf8e000 ""
+
+offset=$1210 = 4011
+
+p=$1211 = 130987
+
+len=$1212 = 47
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1213 = 0xf8e000 ""
+
+offset=$1214 = 4010
+
+p=$1215 = 130986
+
+len=$1216 = 46
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1217 = 0xf8e000 ""
+
+offset=$1218 = 4009
+
+p=$1219 = 130985
+
+len=$1220 = 45
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1221 = 0xf8e000 ""
+
+offset=$1222 = 4008
+
+p=$1223 = 130984
+
+len=$1224 = 44
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1225 = 0xf8e000 ""
+
+offset=$1226 = 4007
+
+p=$1227 = 130983
+
+len=$1228 = 43
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1229 = 0xf8e000 ""
+
+offset=$1230 = 4006
+
+p=$1231 = 130982
+
+len=$1232 = 42
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1233 = 0xf8e000 ""
+
+offset=$1234 = 4005
+
+p=$1235 = 130981
+
+len=$1236 = 41
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1237 = 0xf8e000 ""
+
+offset=$1238 = 4004
+
+p=$1239 = 130980
+
+len=$1240 = 40
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1241 = 0xf8e000 ""
+
+offset=$1242 = 4003
+
+p=$1243 = 130979
+
+len=$1244 = 39
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1245 = 0xf8e000 ""
+
+offset=$1246 = 4002
+
+p=$1247 = 130978
+
+len=$1248 = 38
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1249 = 0xf8e000 ""
+
+offset=$1250 = 4001
+
+p=$1251 = 130977
+
+len=$1252 = 37
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1253 = 0xf8e000 ""
+
+offset=$1254 = 4000
+
+p=$1255 = 130976
+
+len=$1256 = 36
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1257 = 0xf8e000 ""
+
+offset=$1258 = 3999
+
+p=$1259 = 130975
+
+len=$1260 = 35
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1261 = 0xf8e000 ""
+
+offset=$1262 = 3998
+
+p=$1263 = 130974
+
+len=$1264 = 34
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1265 = 0xf8e000 ""
+
+offset=$1266 = 3997
+
+p=$1267 = 130973
+
+len=$1268 = 33
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1269 = 0xf8e000 ""
+
+offset=$1270 = 3996
+
+p=$1271 = 130972
+
+len=$1272 = 32
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1273 = 0xf8e000 ""
+
+offset=$1274 = 3995
+
+p=$1275 = 130971
+
+len=$1276 = 31
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1277 = 0xf8e000 ""
+
+offset=$1278 = 3994
+
+p=$1279 = 130970
+
+len=$1280 = 30
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1281 = 0xf8e000 ""
+
+offset=$1282 = 3993
+
+p=$1283 = 130969
+
+len=$1284 = 29
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1285 = 0xf8e000 ""
+
+offset=$1286 = 3992
+
+p=$1287 = 130968
+
+len=$1288 = 28
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1289 = 0xf8e000 ""
+
+offset=$1290 = 3991
+
+p=$1291 = 130967
+
+len=$1292 = 27
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1293 = 0xf8e000 ""
+
+offset=$1294 = 3990
+
+p=$1295 = 130966
+
+len=$1296 = 26
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1297 = 0xf8e000 ""
+
+offset=$1298 = 3989
+
+p=$1299 = 130965
+
+len=$1300 = 25
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1301 = 0xf8e000 ""
+
+offset=$1302 = 3988
+
+p=$1303 = 130964
+
+len=$1304 = 24
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1305 = 0xf8e000 ""
+
+offset=$1306 = 3987
+
+p=$1307 = 130963
+
+len=$1308 = 23
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1309 = 0xf8e000 ""
+
+offset=$1310 = 3986
+
+p=$1311 = 130962
+
+len=$1312 = 22
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1313 = 0xf8e000 ""
+
+offset=$1314 = 3985
+
+p=$1315 = 130961
+
+len=$1316 = 21
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1317 = 0xf8e000 ""
+
+offset=$1318 = 3984
+
+p=$1319 = 130960
+
+len=$1320 = 20
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1321 = 0xf8e000 ""
+
+offset=$1322 = 3983
+
+p=$1323 = 130959
+
+len=$1324 = 19
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1325 = 0xf8e000 ""
+
+offset=$1326 = 3982
+
+p=$1327 = 130958
+
+len=$1328 = 18
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1329 = 0xf8e000 ""
+
+offset=$1330 = 3981
+
+p=$1331 = 130957
+
+len=$1332 = 17
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1333 = 0xf8e000 ""
+
+offset=$1334 = 3980
+
+p=$1335 = 130956
+
+len=$1336 = 16
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1337 = 0xf8e000 ""
+
+offset=$1338 = 3979
+
+p=$1339 = 130955
+
+len=$1340 = 15
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1341 = 0xf8e000 ""
+
+offset=$1342 = 3978
+
+p=$1343 = 130954
+
+len=$1344 = 14
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1345 = 0xf8e000 ""
+
+offset=$1346 = 3977
+
+p=$1347 = 130953
+
+len=$1348 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1349 = 0xf8e000 ""
+
+offset=$1350 = 3976
+
+p=$1351 = 130952
+
+len=$1352 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1353 = 0xf8e000 ""
+
+offset=$1354 = 3975
+
+p=$1355 = 130951
+
+len=$1356 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1357 = 0xf8e000 ""
+
+offset=$1358 = 3974
+
+p=$1359 = 130950
+
+len=$1360 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1361 = 0xf8e000 ""
+
+offset=$1362 = 3973
+
+p=$1363 = 130949
+
+len=$1364 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1365 = 0xf8e000 ""
+
+offset=$1366 = 3972
+
+p=$1367 = 130948
+
+len=$1368 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1369 = 0xf8e000 ""
+
+offset=$1370 = 3971
+
+p=$1371 = 130947
+
+len=$1372 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1373 = 0xf8e000 ""
+
+offset=$1374 = 3970
+
+p=$1375 = 130946
+
+len=$1376 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1377 = 0xf8e000 ""
+
+offset=$1378 = 3969
+
+p=$1379 = 130945
+
+len=$1380 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1381 = 0xf8e000 ""
+
+offset=$1382 = 3968
+
+p=$1383 = 130944
+
+len=$1384 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1385 = 0xf8e000 ""
+
+offset=$1386 = 3967
+
+p=$1387 = 130943
+
+len=$1388 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1389 = 0xf8e000 ""
+
+offset=$1390 = 3966
+
+p=$1391 = 130942
+
+len=$1392 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1393 = 0xf8e000 ""
+
+offset=$1394 = 3965
+
+p=$1395 = 130941
+
+len=$1396 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1397 = 0xf8e000 ""
+
+offset=$1398 = 3964
+
+p=$1399 = 130940
+
+len=$1400 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1401 = 0xf8e000 ""
+
+offset=$1402 = 3963
+
+p=$1403 = 130939
+
+len=$1404 = 14
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1405 = 0xf8e000 ""
+
+offset=$1406 = 3962
+
+p=$1407 = 130938
+
+len=$1408 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1409 = 0xf8e000 ""
+
+offset=$1410 = 3961
+
+p=$1411 = 130937
+
+len=$1412 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1413 = 0xf8e000 ""
+
+offset=$1414 = 3960
+
+p=$1415 = 130936
+
+len=$1416 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1417 = 0xf8e000 ""
+
+offset=$1418 = 3959
+
+p=$1419 = 130935
+
+len=$1420 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1421 = 0xf8e000 ""
+
+offset=$1422 = 3958
+
+p=$1423 = 130934
+
+len=$1424 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1425 = 0xf8e000 ""
+
+offset=$1426 = 3957
+
+p=$1427 = 130933
+
+len=$1428 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1429 = 0xf8e000 ""
+
+offset=$1430 = 3956
+
+p=$1431 = 130932
+
+len=$1432 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1433 = 0xf8e000 ""
+
+offset=$1434 = 3955
+
+p=$1435 = 130931
+
+len=$1436 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1437 = 0xf8e000 ""
+
+offset=$1438 = 3954
+
+p=$1439 = 130930
+
+len=$1440 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1441 = 0xf8e000 ""
+
+offset=$1442 = 3953
+
+p=$1443 = 130929
+
+len=$1444 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1445 = 0xf8e000 ""
+
+offset=$1446 = 3952
+
+p=$1447 = 130928
+
+len=$1448 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1449 = 0xf8e000 ""
+
+offset=$1450 = 3951
+
+p=$1451 = 130927
+
+len=$1452 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1453 = 0xf8e000 ""
+
+offset=$1454 = 3950
+
+p=$1455 = 130926
+
+len=$1456 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1457 = 0xf8e000 ""
+
+offset=$1458 = 3949
+
+p=$1459 = 130925
+
+len=$1460 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1461 = 0xf8e000 ""
+
+offset=$1462 = 3948
+
+p=$1463 = 130924
+
+len=$1464 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1465 = 0xf8e000 ""
+
+offset=$1466 = 3947
+
+p=$1467 = 130923
+
+len=$1468 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1469 = 0xf8e000 ""
+
+offset=$1470 = 3946
+
+p=$1471 = 130922
+
+len=$1472 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1473 = 0xf8e000 ""
+
+offset=$1474 = 3945
+
+p=$1475 = 130921
+
+len=$1476 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1477 = 0xf8e000 ""
+
+offset=$1478 = 3944
+
+p=$1479 = 130920
+
+len=$1480 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1481 = 0xf8e000 ""
+
+offset=$1482 = 3943
+
+p=$1483 = 130919
+
+len=$1484 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1485 = 0xf8e000 ""
+
+offset=$1486 = 3942
+
+p=$1487 = 130918
+
+len=$1488 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1489 = 0xf8e000 ""
+
+offset=$1490 = 3941
+
+p=$1491 = 130917
+
+len=$1492 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1493 = 0xf8e000 ""
+
+offset=$1494 = 3940
+
+p=$1495 = 130916
+
+len=$1496 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1497 = 0xf8e000 ""
+
+offset=$1498 = 3939
+
+p=$1499 = 130915
+
+len=$1500 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1501 = 0xf8e000 ""
+
+offset=$1502 = 3938
+
+p=$1503 = 130914
+
+len=$1504 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1505 = 0xf8e000 ""
+
+offset=$1506 = 3937
+
+p=$1507 = 130913
+
+len=$1508 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1509 = 0xf8e000 ""
+
+offset=$1510 = 3936
+
+p=$1511 = 130912
+
+len=$1512 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1513 = 0xf8e000 ""
+
+offset=$1514 = 3935
+
+p=$1515 = 130911
+
+len=$1516 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1517 = 0xf8e000 ""
+
+offset=$1518 = 3934
+
+p=$1519 = 130910
+
+len=$1520 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1521 = 0xf8e000 ""
+
+offset=$1522 = 3933
+
+p=$1523 = 130909
+
+len=$1524 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1525 = 0xf8e000 ""
+
+offset=$1526 = 3932
+
+p=$1527 = 130908
+
+len=$1528 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1529 = 0xf8e000 ""
+
+offset=$1530 = 3931
+
+p=$1531 = 130907
+
+len=$1532 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1533 = 0xf8e000 ""
+
+offset=$1534 = 3930
+
+p=$1535 = 130906
+
+len=$1536 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1537 = 0xf8e000 ""
+
+offset=$1538 = 3929
+
+p=$1539 = 130905
+
+len=$1540 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1541 = 0xf8e000 ""
+
+offset=$1542 = 3928
+
+p=$1543 = 130904
+
+len=$1544 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1545 = 0xf8e000 ""
+
+offset=$1546 = 3927
+
+p=$1547 = 130903
+
+len=$1548 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1549 = 0xf8e000 ""
+
+offset=$1550 = 3926
+
+p=$1551 = 130902
+
+len=$1552 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1553 = 0xf8e000 ""
+
+offset=$1554 = 3925
+
+p=$1555 = 130901
+
+len=$1556 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1557 = 0xf8e000 ""
+
+offset=$1558 = 3924
+
+p=$1559 = 130900
+
+len=$1560 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1561 = 0xf8e000 ""
+
+offset=$1562 = 3923
+
+p=$1563 = 130899
+
+len=$1564 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1565 = 0xf8e000 ""
+
+offset=$1566 = 3922
+
+p=$1567 = 130898
+
+len=$1568 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1569 = 0xf8e000 ""
+
+offset=$1570 = 3921
+
+p=$1571 = 130897
+
+len=$1572 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1573 = 0xf8e000 ""
+
+offset=$1574 = 3920
+
+p=$1575 = 130896
+
+len=$1576 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1577 = 0xf8e000 ""
+
+offset=$1578 = 3919
+
+p=$1579 = 130895
+
+len=$1580 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1581 = 0xf8e000 ""
+
+offset=$1582 = 3918
+
+p=$1583 = 130894
+
+len=$1584 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1585 = 0xf8e000 ""
+
+offset=$1586 = 3917
+
+p=$1587 = 130893
+
+len=$1588 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1589 = 0xf8e000 ""
+
+offset=$1590 = 3916
+
+p=$1591 = 130892
+
+len=$1592 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1593 = 0xf8e000 ""
+
+offset=$1594 = 3915
+
+p=$1595 = 130891
+
+len=$1596 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1597 = 0xf8e000 ""
+
+offset=$1598 = 3914
+
+p=$1599 = 130890
+
+len=$1600 = 0
+
+
+
+    from_kmem=0) at exec.c:114
+114		old_fs = get_fs();
+exec.c-114 
+ 
+new_fs=$1601 = 16
+
+old_fs=$1602 = 23
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1603 = 0xf8e000 ""
+
+offset=$1604 = 3913
+
+p=$1605 = 130889
+
+len=$1606 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1607 = 0xf8e000 ""
+
+offset=$1608 = 3912
+
+p=$1609 = 130888
+
+len=$1610 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1611 = 0xf8e000 ""
+
+offset=$1612 = 3911
+
+p=$1613 = 130887
+
+len=$1614 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1615 = 0xf8e000 ""
+
+offset=$1616 = 3910
+
+p=$1617 = 130886
+
+len=$1618 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1619 = 0xf8e000 ""
+
+offset=$1620 = 3909
+
+p=$1621 = 130885
+
+len=$1622 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1623 = 0xf8e000 ""
+
+offset=$1624 = 3908
+
+p=$1625 = 130884
+
+len=$1626 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1627 = 0xf8e000 ""
+
+offset=$1628 = 3907
+
+p=$1629 = 130883
+
+len=$1630 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1631 = 0xf8e000 ""
+
+offset=$1632 = 3906
+
+p=$1633 = 130882
+
+len=$1634 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1635 = 0xf8e000 ""
+
+offset=$1636 = 3905
+
+p=$1637 = 130881
+
+len=$1638 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1639 = 0xf8e000 ""
+
+offset=$1640 = 3904
+
+p=$1641 = 130880
+
+len=$1642 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1643 = 0xf8e000 ""
+
+offset=$1644 = 3903
+
+p=$1645 = 130879
+
+len=$1646 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1647 = 0xf8e000 ""
+
+offset=$1648 = 3902
+
+p=$1649 = 130878
+
+len=$1650 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1651 = 0xf8e000 ""
+
+offset=$1652 = 3901
+
+p=$1653 = 130877
+
+len=$1654 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1655 = 0xf8e000 ""
+
+offset=$1656 = 3900
+
+p=$1657 = 130876
+
+len=$1658 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1659 = 0xf8e000 ""
+
+offset=$1660 = 3899
+
+p=$1661 = 130875
+
+len=$1662 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1663 = 0xf8e000 ""
+
+offset=$1664 = 3898
+
+p=$1665 = 130874
+
+len=$1666 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1667 = 0xf8e000 ""
+
+offset=$1668 = 3897
+
+p=$1669 = 130873
+
+len=$1670 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1671 = 0xf8e000 ""
+
+offset=$1672 = 3896
+
+p=$1673 = 130872
+
+len=$1674 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1675 = 0xf8e000 ""
+
+offset=$1676 = 3895
+
+p=$1677 = 130871
+
+len=$1678 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1679 = 0xf8e000 ""
+
+offset=$1680 = 3894
+
+p=$1681 = 130870
+
+len=$1682 = 0
+
+
+
+    argv=0x5df6c, envp=0x4b14c) at exec.c:344
+344		while (i&0xfff)
+exec.c-344 
+ 
+p=$1683 = 67108588
+
+ex.a_entry=$1684 = 0
+
+
+
+    at exec.c:344
+344		while (i&0xfff)
+exec.c-344 
+ 
+p=$1685 = 0
+
+ex.a_entry=$1686 = 0
+
+
+
+    argv=0x4fa2c, envp=0x4f04c) at exec.c:199
+199		if (!(inode=namei(filename)))		/* get executables inode */
+exec.c-199 
+ 
+inode=$1687 = (struct m_inode *) 0xb33b <do_wp_page+57>
+
+
+    argv=0x4fa2c, envp=0x4f04c) at exec.c:212
+212		if (current->euid == inode->i_uid)
+exec.c-212 
+ 
+eip[1]=$1688 = 15
+inode=$1689 = {i_mode = 33225, i_uid = 0, i_size = 46084, 
+  i_mtime = 1078686773, i_gid = 0 '\000', i_nlinks = 1 '\001', i_zone = {
+    11686, 11687, 11688, 11689, 11690, 11691, 11692, 11693, 0}, 
+  i_wait = 0x0 <startup_32>, i_atime = 1578501129, i_ctime = 0, i_dev = 769, 
+  i_num = 359, i_count = 1, i_lock = 0 '\000', i_dirt = 1 '\001', 
+  i_pipe = 0 '\000', i_mount = 0 '\000', i_seek = 0 '\000', 
+  i_update = 0 '\000'}
+current=$1690 = {state = 0, counter = 15, priority = 15, signal = 0, 
+  sigaction = {{sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1730 <pg0+1840>, sa_mask = 0, 
+      sa_flags = -1073741824, sa_restorer = 0x3d92c}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = 0, 
+      sa_restorer = 0x0 <startup_32>}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x1534 <pg0+1332>, sa_mask = 32703, sa_flags = 0, 
+      sa_restorer = 0x3d934}, {sa_handler = 0x1534 <pg0+1332>, 
+      sa_mask = 32703, sa_flags = 0, sa_restorer = 0x3d934}, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = -1073741824, 
+      sa_restorer = 0x3d92c} <repeats 17 times>, {
+      sa_handler = 0x0 <startup_32>, sa_mask = 0, sa_flags = 0, 
+      sa_restorer = 0x0 <startup_32>}}, blocked = 0, exit_code = 0, 
+  start_code = 335544320, end_code = 266240, end_data = 282624, brk = 338944, 
+  start_stack = 67104768, pid = 7, father = 6, pgrp = 4, session = 4, 
+  leader = 0, uid = 0, euid = 0, suid = 0, gid = 0, egid = 0, sgid = 0, 
+  alarm = 0, utime = 0, stime = 0, cutime = 0, cstime = 0, start_time = 3962, 
+  used_math = 0, tty = 0, umask = 54, pwd = 0x276f8 <inode_table+280>, 
+  root = 0x27618 <inode_table+56>, executable = 0x27768 <inode_table+392>, 
+  close_on_exec = 8, filp = {0x29770 <file_table+16>, 0x29770 <file_table+16>, 
+    0x29770 <file_table+16>, 0x29780 <file_table+32>, 
+    0x0 <startup_32> <repeats 16 times>}, ldt = {{a = 0, b = 0}, {a = 64, 
+      b = 348191488}, {a = 16383, b = 348189440}}, tss = {back_link = 0, 
+    esp0 = 16277504, ss0 = 16, esp1 = 0, ss1 = 0, esp2 = 0, ss2 = 0, cr3 = 0, 
+    eip = 235695, eflags = 582, eax = 0, ecx = 3, edx = 336960, ebx = 3, 
+    esp = 67108096, ebp = 67108108, esi = 3, edi = 384908, es = 23, cs = 15, 
+    ss = 23, ds = 23, fs = 23, gs = 23, ldt = 120, trace_bitmap = -2147483648, 
+    i387 = {cwd = 0, swd = 0, twd = 0, fip = 0, fcs = 0, foo = 0, fos = 0, 
+      st_space = {0 <repeats 20 times>}}}}
+e_uid=$1691 = 0
+
+e_gid=$1692 = 0
+
+i=$1693 = 33225
+
+
+
+    argv=0x4fa2c, envp=0x4f04c) at exec.c:216
+216		if (!(i & 1) &&
+exec.c-216 
+ 
+i=$1694 = 519
+
+
+
+    argv=0x4fa2c, envp=0x4f04c) at exec.c:226
+226		if ((bh->b_data[0] == '#') && (bh->b_data[1] == '!') && (!sh_bang)) {
+exec.c-226 
+ 
+bh=$1695 = {b_data = 0x3b5c00 "\v\001", b_blocknr = 11686, b_dev = 769, 
+  b_uptodate = 1 '\001', b_dirt = 0 '\000', b_count = 1 '\001', 
+  b_lock = 0 '\000', b_wait = 0x0 <startup_32>, b_prev = 0x0 <startup_32>, 
+  b_next = 0x2b15c, b_prev_free = 0x2c968, b_next_free = 0x2c9b0}
+
+b_data$1696 = 11 '\v'
+
+sh_bang=$1697 = 0
+
+
+
+    argv=0x4fa2c, envp=0x4f04c) at exec.c:310
+310		if (!sh_bang) {
+exec.c-310 
+ 
+sh_bang=$1698 = 0
+
+
+
+    from_kmem=0) at exec.c:114
+114		old_fs = get_fs();
+exec.c-114 
+ 
+new_fs=$1699 = 16
+
+old_fs=$1700 = 139264
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1701 = 0xf7a000 ""
+
+offset=$1702 = 4091
+
+p=$1703 = 131067
+
+len=$1704 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1705 = 0xf7a000 ""
+
+offset=$1706 = 4090
+
+p=$1707 = 131066
+
+len=$1708 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1709 = 0xf7a000 ""
+
+offset=$1710 = 4089
+
+p=$1711 = 131065
+
+len=$1712 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1713 = 0xf7a000 ""
+
+offset=$1714 = 4088
+
+p=$1715 = 131064
+
+len=$1716 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1717 = 0xf7a000 ""
+
+offset=$1718 = 4087
+
+p=$1719 = 131063
+
+len=$1720 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1721 = 0xf7a000 ""
+
+offset=$1722 = 4086
+
+p=$1723 = 131062
+
+len=$1724 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1725 = 0xf7a000 ""
+
+offset=$1726 = 4085
+
+p=$1727 = 131061
+
+len=$1728 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1729 = 0xf7a000 ""
+
+offset=$1730 = 4084
+
+p=$1731 = 131060
+
+len=$1732 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1733 = 0xf7a000 ""
+
+offset=$1734 = 4083
+
+p=$1735 = 131059
+
+len=$1736 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1737 = 0xf7a000 ""
+
+offset=$1738 = 4082
+
+p=$1739 = 131058
+
+len=$1740 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1741 = 0xf7a000 ""
+
+offset=$1742 = 4081
+
+p=$1743 = 131057
+
+len=$1744 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1745 = 0xf7a000 ""
+
+offset=$1746 = 4080
+
+p=$1747 = 131056
+
+len=$1748 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1749 = 0xf7a000 ""
+
+offset=$1750 = 4079
+
+p=$1751 = 131055
+
+len=$1752 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1753 = 0xf7a000 ""
+
+offset=$1754 = 4078
+
+p=$1755 = 131054
+
+len=$1756 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1757 = 0xf7a000 ""
+
+offset=$1758 = 4077
+
+p=$1759 = 131053
+
+len=$1760 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1761 = 0xf7a000 ""
+
+offset=$1762 = 4076
+
+p=$1763 = 131052
+
+len=$1764 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1765 = 0xf7a000 ""
+
+offset=$1766 = 4075
+
+p=$1767 = 131051
+
+len=$1768 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1769 = 0xf7a000 ""
+
+offset=$1770 = 4074
+
+p=$1771 = 131050
+
+len=$1772 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1773 = 0xf7a000 ""
+
+offset=$1774 = 4073
+
+p=$1775 = 131049
+
+len=$1776 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1777 = 0xf7a000 ""
+
+offset=$1778 = 4072
+
+p=$1779 = 131048
+
+len=$1780 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1781 = 0xf7a000 ""
+
+offset=$1782 = 4071
+
+p=$1783 = 131047
+
+len=$1784 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1785 = 0xf7a000 ""
+
+offset=$1786 = 4070
+
+p=$1787 = 131046
+
+len=$1788 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1789 = 0xf7a000 ""
+
+offset=$1790 = 4069
+
+p=$1791 = 131045
+
+len=$1792 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1793 = 0xf7a000 ""
+
+offset=$1794 = 4068
+
+p=$1795 = 131044
+
+len=$1796 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1797 = 0xf7a000 ""
+
+offset=$1798 = 4067
+
+p=$1799 = 131043
+
+len=$1800 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1801 = 0xf7a000 ""
+
+offset=$1802 = 4066
+
+p=$1803 = 131042
+
+len=$1804 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1805 = 0xf7a000 ""
+
+offset=$1806 = 4065
+
+p=$1807 = 131041
+
+len=$1808 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1809 = 0xf7a000 ""
+
+offset=$1810 = 4064
+
+p=$1811 = 131040
+
+len=$1812 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1813 = 0xf7a000 ""
+
+offset=$1814 = 4063
+
+p=$1815 = 131039
+
+len=$1816 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1817 = 0xf7a000 ""
+
+offset=$1818 = 4062
+
+p=$1819 = 131038
+
+len=$1820 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1821 = 0xf7a000 ""
+
+offset=$1822 = 4061
+
+p=$1823 = 131037
+
+len=$1824 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1825 = 0xf7a000 ""
+
+offset=$1826 = 4060
+
+p=$1827 = 131036
+
+len=$1828 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1829 = 0xf7a000 ""
+
+offset=$1830 = 4059
+
+p=$1831 = 131035
+
+len=$1832 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1833 = 0xf7a000 ""
+
+offset=$1834 = 4058
+
+p=$1835 = 131034
+
+len=$1836 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1837 = 0xf7a000 ""
+
+offset=$1838 = 4057
+
+p=$1839 = 131033
+
+len=$1840 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1841 = 0xf7a000 ""
+
+offset=$1842 = 4056
+
+p=$1843 = 131032
+
+len=$1844 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1845 = 0xf7a000 ""
+
+offset=$1846 = 4055
+
+p=$1847 = 131031
+
+len=$1848 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1849 = 0xf7a000 ""
+
+offset=$1850 = 4054
+
+p=$1851 = 131030
+
+len=$1852 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1853 = 0xf7a000 ""
+
+offset=$1854 = 4053
+
+p=$1855 = 131029
+
+len=$1856 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1857 = 0xf7a000 ""
+
+offset=$1858 = 4052
+
+p=$1859 = 131028
+
+len=$1860 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1861 = 0xf7a000 ""
+
+offset=$1862 = 4051
+
+p=$1863 = 131027
+
+len=$1864 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1865 = 0xf7a000 ""
+
+offset=$1866 = 4050
+
+p=$1867 = 131026
+
+len=$1868 = 70
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1869 = 0xf7a000 ""
+
+offset=$1870 = 4049
+
+p=$1871 = 131025
+
+len=$1872 = 69
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1873 = 0xf7a000 ""
+
+offset=$1874 = 4048
+
+p=$1875 = 131024
+
+len=$1876 = 68
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1877 = 0xf7a000 ""
+
+offset=$1878 = 4047
+
+p=$1879 = 131023
+
+len=$1880 = 67
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1881 = 0xf7a000 ""
+
+offset=$1882 = 4046
+
+p=$1883 = 131022
+
+len=$1884 = 66
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1885 = 0xf7a000 ""
+
+offset=$1886 = 4045
+
+p=$1887 = 131021
+
+len=$1888 = 65
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1889 = 0xf7a000 ""
+
+offset=$1890 = 4044
+
+p=$1891 = 131020
+
+len=$1892 = 64
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1893 = 0xf7a000 ""
+
+offset=$1894 = 4043
+
+p=$1895 = 131019
+
+len=$1896 = 63
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1897 = 0xf7a000 ""
+
+offset=$1898 = 4042
+
+p=$1899 = 131018
+
+len=$1900 = 62
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1901 = 0xf7a000 ""
+
+offset=$1902 = 4041
+
+p=$1903 = 131017
+
+len=$1904 = 61
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1905 = 0xf7a000 ""
+
+offset=$1906 = 4040
+
+p=$1907 = 131016
+
+len=$1908 = 60
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1909 = 0xf7a000 ""
+
+offset=$1910 = 4039
+
+p=$1911 = 131015
+
+len=$1912 = 59
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1913 = 0xf7a000 ""
+
+offset=$1914 = 4038
+
+p=$1915 = 131014
+
+len=$1916 = 58
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1917 = 0xf7a000 ""
+
+offset=$1918 = 4037
+
+p=$1919 = 131013
+
+len=$1920 = 57
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1921 = 0xf7a000 ""
+
+offset=$1922 = 4036
+
+p=$1923 = 131012
+
+len=$1924 = 56
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1925 = 0xf7a000 ""
+
+offset=$1926 = 4035
+
+p=$1927 = 131011
+
+len=$1928 = 55
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1929 = 0xf7a000 ""
+
+offset=$1930 = 4034
+
+p=$1931 = 131010
+
+len=$1932 = 54
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1933 = 0xf7a000 ""
+
+offset=$1934 = 4033
+
+p=$1935 = 131009
+
+len=$1936 = 53
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1937 = 0xf7a000 ""
+
+offset=$1938 = 4032
+
+p=$1939 = 131008
+
+len=$1940 = 52
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1941 = 0xf7a000 ""
+
+offset=$1942 = 4031
+
+p=$1943 = 131007
+
+len=$1944 = 51
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1945 = 0xf7a000 ""
+
+offset=$1946 = 4030
+
+p=$1947 = 131006
+
+len=$1948 = 50
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1949 = 0xf7a000 ""
+
+offset=$1950 = 4029
+
+p=$1951 = 131005
+
+len=$1952 = 49
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1953 = 0xf7a000 ""
+
+offset=$1954 = 4028
+
+p=$1955 = 131004
+
+len=$1956 = 48
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1957 = 0xf7a000 ""
+
+offset=$1958 = 4027
+
+p=$1959 = 131003
+
+len=$1960 = 47
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1961 = 0xf7a000 ""
+
+offset=$1962 = 4026
+
+p=$1963 = 131002
+
+len=$1964 = 46
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1965 = 0xf7a000 ""
+
+offset=$1966 = 4025
+
+p=$1967 = 131001
+
+len=$1968 = 45
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1969 = 0xf7a000 ""
+
+offset=$1970 = 4024
+
+p=$1971 = 131000
+
+len=$1972 = 44
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1973 = 0xf7a000 ""
+
+offset=$1974 = 4023
+
+p=$1975 = 130999
+
+len=$1976 = 43
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1977 = 0xf7a000 ""
+
+offset=$1978 = 4022
+
+p=$1979 = 130998
+
+len=$1980 = 42
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1981 = 0xf7a000 ""
+
+offset=$1982 = 4021
+
+p=$1983 = 130997
+
+len=$1984 = 41
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1985 = 0xf7a000 ""
+
+offset=$1986 = 4020
+
+p=$1987 = 130996
+
+len=$1988 = 40
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1989 = 0xf7a000 ""
+
+offset=$1990 = 4019
+
+p=$1991 = 130995
+
+len=$1992 = 39
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1993 = 0xf7a000 ""
+
+offset=$1994 = 4018
+
+p=$1995 = 130994
+
+len=$1996 = 38
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$1997 = 0xf7a000 ""
+
+offset=$1998 = 4017
+
+p=$1999 = 130993
+
+len=$2000 = 37
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2001 = 0xf7a000 ""
+
+offset=$2002 = 4016
+
+p=$2003 = 130992
+
+len=$2004 = 36
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2005 = 0xf7a000 ""
+
+offset=$2006 = 4015
+
+p=$2007 = 130991
+
+len=$2008 = 35
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2009 = 0xf7a000 ""
+
+offset=$2010 = 4014
+
+p=$2011 = 130990
+
+len=$2012 = 34
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2013 = 0xf7a000 ""
+
+offset=$2014 = 4013
+
+p=$2015 = 130989
+
+len=$2016 = 33
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2017 = 0xf7a000 ""
+
+offset=$2018 = 4012
+
+p=$2019 = 130988
+
+len=$2020 = 32
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2021 = 0xf7a000 ""
+
+offset=$2022 = 4011
+
+p=$2023 = 130987
+
+len=$2024 = 31
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2025 = 0xf7a000 ""
+
+offset=$2026 = 4010
+
+p=$2027 = 130986
+
+len=$2028 = 30
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2029 = 0xf7a000 ""
+
+offset=$2030 = 4009
+
+p=$2031 = 130985
+
+len=$2032 = 29
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2033 = 0xf7a000 ""
+
+offset=$2034 = 4008
+
+p=$2035 = 130984
+
+len=$2036 = 28
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2037 = 0xf7a000 ""
+
+offset=$2038 = 4007
+
+p=$2039 = 130983
+
+len=$2040 = 27
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2041 = 0xf7a000 ""
+
+offset=$2042 = 4006
+
+p=$2043 = 130982
+
+len=$2044 = 26
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2045 = 0xf7a000 ""
+
+offset=$2046 = 4005
+
+p=$2047 = 130981
+
+len=$2048 = 25
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2049 = 0xf7a000 ""
+
+offset=$2050 = 4004
+
+p=$2051 = 130980
+
+len=$2052 = 24
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2053 = 0xf7a000 ""
+
+offset=$2054 = 4003
+
+p=$2055 = 130979
+
+len=$2056 = 23
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2057 = 0xf7a000 ""
+
+offset=$2058 = 4002
+
+p=$2059 = 130978
+
+len=$2060 = 22
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2061 = 0xf7a000 ""
+
+offset=$2062 = 4001
+
+p=$2063 = 130977
+
+len=$2064 = 21
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2065 = 0xf7a000 ""
+
+offset=$2066 = 4000
+
+p=$2067 = 130976
+
+len=$2068 = 20
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2069 = 0xf7a000 ""
+
+offset=$2070 = 3999
+
+p=$2071 = 130975
+
+len=$2072 = 19
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2073 = 0xf7a000 ""
+
+offset=$2074 = 3998
+
+p=$2075 = 130974
+
+len=$2076 = 18
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2077 = 0xf7a000 ""
+
+offset=$2078 = 3997
+
+p=$2079 = 130973
+
+len=$2080 = 17
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2081 = 0xf7a000 ""
+
+offset=$2082 = 3996
+
+p=$2083 = 130972
+
+len=$2084 = 16
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2085 = 0xf7a000 ""
+
+offset=$2086 = 3995
+
+p=$2087 = 130971
+
+len=$2088 = 15
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2089 = 0xf7a000 ""
+
+offset=$2090 = 3994
+
+p=$2091 = 130970
+
+len=$2092 = 14
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2093 = 0xf7a000 ""
+
+offset=$2094 = 3993
+
+p=$2095 = 130969
+
+len=$2096 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2097 = 0xf7a000 ""
+
+offset=$2098 = 3992
+
+p=$2099 = 130968
+
+len=$2100 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2101 = 0xf7a000 ""
+
+offset=$2102 = 3991
+
+p=$2103 = 130967
+
+len=$2104 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2105 = 0xf7a000 ""
+
+offset=$2106 = 3990
+
+p=$2107 = 130966
+
+len=$2108 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2109 = 0xf7a000 ""
+
+offset=$2110 = 3989
+
+p=$2111 = 130965
+
+len=$2112 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2113 = 0xf7a000 ""
+
+offset=$2114 = 3988
+
+p=$2115 = 130964
+
+len=$2116 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2117 = 0xf7a000 ""
+
+offset=$2118 = 3987
+
+p=$2119 = 130963
+
+len=$2120 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2121 = 0xf7a000 ""
+
+offset=$2122 = 3986
+
+p=$2123 = 130962
+
+len=$2124 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2125 = 0xf7a000 ""
+
+offset=$2126 = 3985
+
+p=$2127 = 130961
+
+len=$2128 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2129 = 0xf7a000 ""
+
+offset=$2130 = 3984
+
+p=$2131 = 130960
+
+len=$2132 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2133 = 0xf7a000 ""
+
+offset=$2134 = 3983
+
+p=$2135 = 130959
+
+len=$2136 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2137 = 0xf7a000 ""
+
+offset=$2138 = 3982
+
+p=$2139 = 130958
+
+len=$2140 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2141 = 0xf7a000 ""
+
+offset=$2142 = 3981
+
+p=$2143 = 130957
+
+len=$2144 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2145 = 0xf7a000 ""
+
+offset=$2146 = 3980
+
+p=$2147 = 130956
+
+len=$2148 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2149 = 0xf7a000 ""
+
+offset=$2150 = 3979
+
+p=$2151 = 130955
+
+len=$2152 = 14
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2153 = 0xf7a000 ""
+
+offset=$2154 = 3978
+
+p=$2155 = 130954
+
+len=$2156 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2157 = 0xf7a000 ""
+
+offset=$2158 = 3977
+
+p=$2159 = 130953
+
+len=$2160 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2161 = 0xf7a000 ""
+
+offset=$2162 = 3976
+
+p=$2163 = 130952
+
+len=$2164 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2165 = 0xf7a000 ""
+
+offset=$2166 = 3975
+
+p=$2167 = 130951
+
+len=$2168 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2169 = 0xf7a000 ""
+
+offset=$2170 = 3974
+
+p=$2171 = 130950
+
+len=$2172 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2173 = 0xf7a000 ""
+
+offset=$2174 = 3973
+
+p=$2175 = 130949
+
+len=$2176 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2177 = 0xf7a000 ""
+
+offset=$2178 = 3972
+
+p=$2179 = 130948
+
+len=$2180 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2181 = 0xf7a000 ""
+
+offset=$2182 = 3971
+
+p=$2183 = 130947
+
+len=$2184 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2185 = 0xf7a000 ""
+
+offset=$2186 = 3970
+
+p=$2187 = 130946
+
+len=$2188 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2189 = 0xf7a000 ""
+
+offset=$2190 = 3969
+
+p=$2191 = 130945
+
+len=$2192 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2193 = 0xf7a000 ""
+
+offset=$2194 = 3968
+
+p=$2195 = 130944
+
+len=$2196 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2197 = 0xf7a000 ""
+
+offset=$2198 = 3967
+
+p=$2199 = 130943
+
+len=$2200 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2201 = 0xf7a000 ""
+
+offset=$2202 = 3966
+
+p=$2203 = 130942
+
+len=$2204 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2205 = 0xf7a000 ""
+
+offset=$2206 = 3965
+
+p=$2207 = 130941
+
+len=$2208 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2209 = 0xf7a000 ""
+
+offset=$2210 = 3964
+
+p=$2211 = 130940
+
+len=$2212 = 14
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2213 = 0xf7a000 ""
+
+offset=$2214 = 3963
+
+p=$2215 = 130939
+
+len=$2216 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2217 = 0xf7a000 ""
+
+offset=$2218 = 3962
+
+p=$2219 = 130938
+
+len=$2220 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2221 = 0xf7a000 ""
+
+offset=$2222 = 3961
+
+p=$2223 = 130937
+
+len=$2224 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2225 = 0xf7a000 ""
+
+offset=$2226 = 3960
+
+p=$2227 = 130936
+
+len=$2228 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2229 = 0xf7a000 ""
+
+offset=$2230 = 3959
+
+p=$2231 = 130935
+
+len=$2232 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2233 = 0xf7a000 ""
+
+offset=$2234 = 3958
+
+p=$2235 = 130934
+
+len=$2236 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2237 = 0xf7a000 ""
+
+offset=$2238 = 3957
+
+p=$2239 = 130933
+
+len=$2240 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2241 = 0xf7a000 ""
+
+offset=$2242 = 3956
+
+p=$2243 = 130932
+
+len=$2244 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2245 = 0xf7a000 ""
+
+offset=$2246 = 3955
+
+p=$2247 = 130931
+
+len=$2248 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2249 = 0xf7a000 ""
+
+offset=$2250 = 3954
+
+p=$2251 = 130930
+
+len=$2252 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2253 = 0xf7a000 ""
+
+offset=$2254 = 3953
+
+p=$2255 = 130929
+
+len=$2256 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2257 = 0xf7a000 ""
+
+offset=$2258 = 3952
+
+p=$2259 = 130928
+
+len=$2260 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2261 = 0xf7a000 ""
+
+offset=$2262 = 3951
+
+p=$2263 = 130927
+
+len=$2264 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2265 = 0xf7a000 ""
+
+offset=$2266 = 3950
+
+p=$2267 = 130926
+
+len=$2268 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2269 = 0xf7a000 ""
+
+offset=$2270 = 3949
+
+p=$2271 = 130925
+
+len=$2272 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2273 = 0xf7a000 ""
+
+offset=$2274 = 3948
+
+p=$2275 = 130924
+
+len=$2276 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2277 = 0xf7a000 ""
+
+offset=$2278 = 3947
+
+p=$2279 = 130923
+
+len=$2280 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2281 = 0xf7a000 ""
+
+offset=$2282 = 3946
+
+p=$2283 = 130922
+
+len=$2284 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2285 = 0xf7a000 ""
+
+offset=$2286 = 3945
+
+p=$2287 = 130921
+
+len=$2288 = 3
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2289 = 0xf7a000 ""
+
+offset=$2290 = 3944
+
+p=$2291 = 130920
+
+len=$2292 = 2
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2293 = 0xf7a000 ""
+
+offset=$2294 = 3943
+
+p=$2295 = 130919
+
+len=$2296 = 1
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2297 = 0xf7a000 ""
+
+offset=$2298 = 3942
+
+p=$2299 = 130918
+
+len=$2300 = 0
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2301 = 0xf7a000 ""
+
+offset=$2302 = 3941
+
+p=$2303 = 130917
+
+len=$2304 = 13
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2305 = 0xf7a000 ""
+
+offset=$2306 = 3940
+
+p=$2307 = 130916
+
+len=$2308 = 12
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2309 = 0xf7a000 ""
+
+offset=$2310 = 3939
+
+p=$2311 = 130915
+
+len=$2312 = 11
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2313 = 0xf7a000 ""
+
+offset=$2314 = 3938
+
+p=$2315 = 130914
+
+len=$2316 = 10
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2317 = 0xf7a000 ""
+
+offset=$2318 = 3937
+
+p=$2319 = 130913
+
+len=$2320 = 9
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2321 = 0xf7a000 ""
+
+offset=$2322 = 3936
+
+p=$2323 = 130912
+
+len=$2324 = 8
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2325 = 0xf7a000 ""
+
+offset=$2326 = 3935
+
+p=$2327 = 130911
+
+len=$2328 = 7
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2329 = 0xf7a000 ""
+
+offset=$2330 = 3934
+
+p=$2331 = 130910
+
+len=$2332 = 6
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2333 = 0xf7a000 ""
+
+offset=$2334 = 3933
+
+p=$2335 = 130909
+
+len=$2336 = 5
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2337 = 0xf7a000 ""
+
+offset=$2338 = 3932
+
+p=$2339 = 130908
+
+len=$2340 = 4
+
+
+
+    from_kmem=0) at exec.c:146
+146				*(pag + offset) = get_fs_byte(tmp);
+exec.c-146 
+ 
+pag=$2341 = 0xf
